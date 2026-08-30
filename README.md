@@ -6,11 +6,11 @@ Production target: `https://shiva.omsaravanabhava.org/`
 
 ## Migration boundary
 
-The existing `ssakthivel02/DivyaNexus` repository and `https://divyanexus.omsaravanabhava.org/` production website are donor/reference sources only and remain unchanged. Shiva is a separate product and deployment.
+The existing `ssakthivel02/Shiva` repository and `https://shiva.omsaravanabhava.org/` production website are donor/reference sources only and remain unchanged. Shiva is a separate product and deployment.
 
 ## Current intake
 
-A controlled migration branch imports the validated current DivyaNexus hi-tech source as a donor baseline, then rebrands and validates it independently for Shiva. The owner-supplied V43.52 RC metadata is recorded separately; the exact RC ZIP must be hash-verified if/when its archive bytes are attached.
+A controlled migration branch imports the validated current Shiva hi-tech source as a donor baseline, then rebrands and validates it independently for Shiva. The owner-supplied V43.52 RC metadata is recorded separately; the exact RC ZIP must be hash-verified if/when its archive bytes are attached.
 
 ## Release gates
 

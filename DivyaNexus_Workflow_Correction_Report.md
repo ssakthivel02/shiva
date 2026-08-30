@@ -1,4 +1,4 @@
-# DivyaNexus Workflow Correction Report
+# Shiva Workflow Correction Report
 
 ## Corrected facts
 
@@ -7,7 +7,7 @@
 - TypeScript command: `pnpm run check`
 - Production build command: `pnpm run build`
 - Frontend Pages artifact: `dist/public`
-- Custom domain: `divyanexus.omsaravanabhava.org`
+- Custom domain: `shiva.omsaravanabhava.org`
 
 ## Files corrected
 

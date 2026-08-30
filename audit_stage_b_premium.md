@@ -1,4 +1,4 @@
-# DivyaNexus Premium Rebuild — Baseline Audit
+# Shiva Premium Rebuild — Baseline Audit
 
 ## Audited surfaces
 
@@ -8,7 +8,7 @@
 | Mobile home | Local Stage B preview at 375×812 | The page stacks into a very long narrow feed. The section system lacks varied mobile compositions, the footer remains tall, the persistent audio bar can compete with the final content area, and the experience feels more like a desktop layout compressed vertically. |
 | Mobile privacy | Local Stage B preview at 375×812 | Copy is readable, but the footer occupies substantial vertical space and the legal surface needs a quieter, more compact terminal composition. |
 | Mobile audio | Local Stage B preview at 375×812 | The primary page state is a large empty-state panel. It should become a compact launch state when no recording is selected; the mobile mini-player must use safe-area-aware spacing and should not cover nearby controls. |
-| Reference | https://ramanexus-2jxfsria.manus.space/ | Use only as a benchmark for presentation density, compositional confidence, and interaction quality. The rebuild must keep DivyaNexus original. |
+| Reference | https://ramanexus-2jxfsria.manus.space/ | Use only as a benchmark for presentation density, compositional confidence, and interaction quality. The rebuild must keep Shiva original. |
 
 ## Priority corrections
 

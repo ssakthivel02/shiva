@@ -1,4 +1,4 @@
-# DivyaNexus — Premium Visual Rebuild Direction
+# Shiva — Premium Visual Rebuild Direction
 
 ## Three Candidate Approaches
 
@@ -23,7 +23,7 @@
 
 ### Design Movement
 
-DivyaNexus will become a **cinematic sacred-knowledge observatory**. It combines gallery-grade visual storytelling, modern AI-product clarity, and a respectful Vedic atmosphere without copying a devotional website, a museum catalog, or the reference product. The experience shifts from a dark editorial interface toward a living universe of layered scenes, art direction, and purposeful interaction.
+Shiva will become a **cinematic sacred-knowledge observatory**. It combines gallery-grade visual storytelling, modern AI-product clarity, and a respectful Vedic atmosphere without copying a devotional website, a museum catalog, or the reference product. The experience shifts from a dark editorial interface toward a living universe of layered scenes, art direction, and purposeful interaction.
 
 ### Core Principles
 
@@ -60,7 +60,7 @@ Motion follows the pace of breath and light: a 12–18 second atmospheric drift 
 
 ### Brand Essence
 
-**DivyaNexus is an immersive, source-aware Vedic knowledge universe for bilingual learners who want sacred context, living cultural discovery, and responsible AI in one considered experience.**
+**Shiva is an immersive, source-aware Vedic knowledge universe for bilingual learners who want sacred context, living cultural discovery, and responsible AI in one considered experience.**
 
 **Personality:** Luminous, cinematic, grounded.
 

@@ -1,4 +1,4 @@
-# DivyaNexus Rollback Runbook
+# Shiva Rollback Runbook
 
 ## When to roll back
 

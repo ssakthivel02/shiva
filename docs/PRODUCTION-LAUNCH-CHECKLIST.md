@@ -1,11 +1,11 @@
-# DivyaNexus Production Launch Checklist
+# Shiva Production Launch Checklist
 
 ## Completed
 
 - [x] GitHub Pages publishing from `main` and repository root
-- [x] Custom domain: `divyanexus.omsaravanabhava.org`
+- [x] Custom domain: `shiva.omsaravanabhava.org`
 - [x] Cloudflare DNS and HTTPS
-- [x] Worker custom domain: `api-divyanexus.omsaravanabhava.org`
+- [x] Worker custom domain: `api-shiva.omsaravanabhava.org`
 - [x] API versioning under `/api/v1`
 - [x] Health, status, version, and ping endpoints
 - [x] Service identity validation: `divyanexus-api`
@@ -44,4 +44,4 @@
 
 ## Release rule
 
-Do not label DivyaNexus as a fully production-ready AI platform until every unchecked account-level and product implementation item above has been completed and independently validated. The current deployment is a healthy production foundation and public website/API baseline, not a finished AI knowledge backend.
+Do not label Shiva as a fully production-ready AI platform until every unchecked account-level and product implementation item above has been completed and independently validated. The current deployment is a healthy production foundation and public website/API baseline, not a finished AI knowledge backend.

@@ -1,12 +1,12 @@
-# DivyaNexus Production Operations
+# Shiva Production Operations
 
 ## Production endpoints
 
-- Website: `https://divyanexus.omsaravanabhava.org/`
-- API root: `https://api-divyanexus.omsaravanabhava.org/`
-- Health: `https://api-divyanexus.omsaravanabhava.org/health`
-- API status: `https://api-divyanexus.omsaravanabhava.org/api/v1/status`
-- Browser status page: `https://divyanexus.omsaravanabhava.org/api-status.html`
+- Website: `https://shiva.omsaravanabhava.org/`
+- API root: `https://api-shiva.omsaravanabhava.org/`
+- Health: `https://api-shiva.omsaravanabhava.org/health`
+- API status: `https://api-shiva.omsaravanabhava.org/api/v1/status`
+- Browser status page: `https://shiva.omsaravanabhava.org/api-status.html`
 
 ## Expected contract
 
@@ -23,7 +23,7 @@
 - Worker source is under `worker/`.
 - Worker deployment is manual through `.github/workflows/deploy-worker.yml`.
 - Production smoke tests run through `.github/workflows/production-smoke.yml`.
-- Only the exact custom domain `api-divyanexus.omsaravanabhava.org` may route to this Worker.
+- Only the exact custom domain `api-shiva.omsaravanabhava.org` may route to this Worker.
 - Never add `*.omsaravanabhava.org/*` or another wildcard Worker route.
 
 ## Required GitHub secrets for Worker deployment

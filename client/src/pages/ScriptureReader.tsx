@@ -188,11 +188,11 @@ export default function ScriptureReader({ kind }: { kind: keyof typeof readerSet
 
                   <div className="reader-meaning-grid" data-reader-language={readerLanguage}>
                     <div className="reader-language-panel reader-language-panel--tamil">
-                      <p className="reader-label">Tamil · DivyaNexus editorial translation</p>
+                      <p className="reader-label">Tamil · Shiva editorial translation</p>
                       <p className="reader-translation" lang="ta">{verified.tamilTranslation}</p>
                     </div>
                     <div className="reader-language-panel reader-language-panel--english">
-                      <p className="reader-label">English · DivyaNexus editorial translation</p>
+                      <p className="reader-label">English · Shiva editorial translation</p>
                       <p className="reader-translation">{verified.englishTranslation}</p>
                     </div>
                   </div>

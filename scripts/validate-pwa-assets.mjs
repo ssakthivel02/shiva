@@ -47,7 +47,7 @@ if (existsSync(serviceWorkerPath)) {
 
 if (existsSync(offlinePath)) {
   const offline = readFileSync(offlinePath, "utf8");
-  for (const marker of ["Offline — DivyaNexus", "noindex,nofollow", "This path is not cached yet."]) {
+  for (const marker of ["Offline — Shiva", "noindex,nofollow", "This path is not cached yet."]) {
     if (!offline.includes(marker)) failures.push(`Offline fallback is missing expected marker: ${marker}`);
   }
 }

@@ -1,4 +1,4 @@
-# DivyaNexus Incident Response
+# Shiva Incident Response
 
 ## Severity model
 

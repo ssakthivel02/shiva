@@ -32,8 +32,8 @@ test.describe("production security boundaries", () => {
     const response = await request.get("/.well-known/security.txt");
     expect(response.ok()).toBeTruthy();
     const text = await response.text();
-    expect(text).toContain("Contact: https://divyanexus.omsaravanabhava.org/contact");
-    expect(text).toContain("Canonical: https://divyanexus.omsaravanabhava.org/.well-known/security.txt");
+    expect(text).toContain("Contact: https://shiva.omsaravanabhava.org/contact");
+    expect(text).toContain("Canonical: https://shiva.omsaravanabhava.org/.well-known/security.txt");
     expect(text).toContain("Preferred-Languages: en, ta");
   });
 });

@@ -1,4 +1,4 @@
-/* DivyaNexus offline shell: cache safe public assets; never cache account or API data. */
+/* Shiva offline shell: cache safe public assets; never cache account or API data. */
 const CACHE = "divyanexus-stage-b-wave8-v1";
 const SHELL_URL = new URL("./", self.registration.scope).toString();
 const MANIFEST_URL = new URL("./manifest.webmanifest", self.registration.scope).toString();

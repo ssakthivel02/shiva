@@ -43,13 +43,13 @@ function setStructuredData(location: string, title: string, description: string,
     image,
     isPartOf: {
       "@type": "WebSite",
-      name: "DivyaNexus",
+      name: "Shiva",
       url: `${DIVYANEXUS_RELEASE.domain}/`,
       inLanguage: ["en", "ta"],
     },
     publisher: {
       "@type": "Organization",
-      name: "DivyaNexus",
+      name: "Shiva",
       url: `${DIVYANEXUS_RELEASE.domain}/`,
     },
   };
@@ -70,7 +70,7 @@ export function DocumentMeta() {
     setMeta("name", "description", meta.description);
     setMeta("name", "robots", meta.robots ?? "index,follow");
     setMeta("property", "og:type", "website");
-    setMeta("property", "og:site_name", "DivyaNexus");
+    setMeta("property", "og:site_name", "Shiva");
     setMeta("property", "og:title", meta.title);
     setMeta("property", "og:description", meta.description);
     setMeta("property", "og:url", canonical);

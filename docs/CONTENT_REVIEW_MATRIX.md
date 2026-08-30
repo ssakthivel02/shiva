@@ -1,4 +1,4 @@
-# DivyaNexus Content Review Matrix
+# Shiva Content Review Matrix
 
 | Collection | Records | Portal use | Additional review required before deeper claims |
 |---|---:|---|---|

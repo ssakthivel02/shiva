@@ -1,4 +1,4 @@
-# DivyaNexus GitHub Pages Direct-Route Repair
+# Shiva GitHub Pages Direct-Route Repair
 
 Date: 28 July 2026
 

@@ -64,7 +64,7 @@ export default function Library() {
   };
 
   const clear = async () => {
-    if (window.confirm("Clear browser-local DivyaNexus bookmarks, history, saved searches, notes, and preferences from this browser?")) {
+    if (window.confirm("Clear browser-local Shiva bookmarks, history, saved searches, notes, and preferences from this browser?")) {
       await clearLocalLibrary();
       setStatus("Browser-local study data cleared");
       await refresh();
@@ -105,7 +105,7 @@ export default function Library() {
       <div className="library-cinema__actions">
         <button className="library-cinema__export" onClick={exportLocalLibrary}><Download size={16} aria-hidden="true" />Export local data</button>
         <button className="library-cinema__import" onClick={() => importInput.current?.click()}><Upload size={16} aria-hidden="true" />Restore local data</button>
-        <input ref={importInput} type="file" accept="application/json,.json" className="library-cinema__file-input" aria-label="Choose DivyaNexus local data JSON" onChange={(event) => restore(event.target.files?.[0])} />
+        <input ref={importInput} type="file" accept="application/json,.json" className="library-cinema__file-input" aria-label="Choose Shiva local data JSON" onChange={(event) => restore(event.target.files?.[0])} />
         <button className="library-cinema__clear" onClick={clear}><Trash2 size={16} aria-hidden="true" />Clear local data</button>
       </div>
       <p className="library-cinema__storage"><HardDrive size={15} aria-hidden="true" />{storage}</p>

@@ -6,16 +6,16 @@
   "workers_dev": true,
   "routes": [
     {
-      "pattern": "api-divyanexus.omsaravanabhava.org",
+      "pattern": "api-shiva.omsaravanabhava.org",
       "custom_domain": true
     }
   ],
   "vars": {
     "SERVICE_NAME": "divyanexus-api",
-    "SERVICE_DISPLAY_NAME": "DivyaNexus API",
+    "SERVICE_DISPLAY_NAME": "Shiva API",
     "SERVICE_VERSION": "1.0.0",
     "ENVIRONMENT": "production",
-    "ALLOWED_ORIGINS": "https://divyanexus.omsaravanabhava.org,https://ssakthivel02.github.io"
+    "ALLOWED_ORIGINS": "https://shiva.omsaravanabhava.org,https://ssakthivel02.github.io"
   },
   "ratelimits": [
     {

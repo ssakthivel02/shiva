@@ -1,4 +1,4 @@
-# DivyaNexus Editorial Depth Wave 5
+# Shiva Editorial Depth Wave 5
 
 Date: 28 July 2026
 

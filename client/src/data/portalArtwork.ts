@@ -20,10 +20,10 @@ export const ownerSelectedArtwork: PortalArtwork = {
   title: "A portal vision for timeless guidance",
   tamilTitle: "காலத்தைத் தாண்டும் ஞானத்திற்கான திவ்யநெக்சஸ் காட்சி",
   description:
-    "The project-owner-selected DivyaNexus vision brings scriptures, deity traditions, temples, rishis, festivals, learning and family pathways into one calm knowledge horizon.",
+    "The project-owner-selected Shiva vision brings scriptures, deity traditions, temples, rishis, festivals, learning and family pathways into one calm knowledge horizon.",
   assetPath: "/assets/divyanexus/owner-selected-vision.webp",
   fallbackPath: "/assets/divyanexus/hero-moonlit-horizon.webp",
   sourceReference: "https://chatgpt.com/s/m_6a68a8d1088481919dcffce0963b43db",
   readyForProduction: true,
-  alt: "DivyaNexus portal vision showing a moonlit Shiva knowledge homepage with scripture, deity, temple, rishi, festival and learning pathways.",
+  alt: "Shiva portal vision showing a moonlit Shiva knowledge homepage with scripture, deity, temple, rishi, festival and learning pathways.",
 };

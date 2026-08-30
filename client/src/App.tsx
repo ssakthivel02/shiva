@@ -1,5 +1,5 @@
 /**
- * DivyaNexus — Celestial Manuscript Atelier.
+ * Shiva — Celestial Manuscript Atelier.
  * Every route stays within one editorial shell so navigation, search, accessibility,
  * the local audio state, and explicit content boundaries remain consistent.
  */

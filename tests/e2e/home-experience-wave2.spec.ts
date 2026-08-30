@@ -7,7 +7,7 @@ async function openHome(page: import("@playwright/test").Page) {
   await expect(page.locator("#main-content")).toBeVisible();
 }
 
-test.describe("DivyaNexus homepage experience wave 2", () => {
+test.describe("Shiva homepage experience wave 2", () => {
   test("homepage exposes the archive pathway panel from the design reference", async ({ page }) => {
     await openHome(page);
 

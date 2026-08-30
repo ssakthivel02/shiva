@@ -13,7 +13,7 @@ export default function CollectionStatus() {
           <p lang="ta">எது தயாராக உள்ளது, எது மதிப்பாய்வில் உள்ளது</p>
           <h1>Depth without hiding the review boundary.</h1>
           <p>
-            DivyaNexus now exposes every expanded editorial pathway by collection and status. The counts below describe local portal records—not the size of the traditions themselves.
+            Shiva now exposes every expanded editorial pathway by collection and status. The counts below describe local portal records—not the size of the traditions themselves.
           </p>
         </div>
         <div className="collection-status-hero__metrics" aria-label="Collection summary">

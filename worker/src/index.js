@@ -1,10 +1,10 @@
 const DEFAULTS = Object.freeze({
   serviceName: "divyanexus-api",
-  displayName: "DivyaNexus API",
+  displayName: "Shiva API",
   environment: "production",
   version: "1.0.0",
   allowedOrigins: [
-    "https://divyanexus.omsaravanabhava.org",
+    "https://shiva.omsaravanabhava.org",
     "https://ssakthivel02.github.io",
   ],
 });

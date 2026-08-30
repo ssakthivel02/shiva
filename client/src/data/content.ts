@@ -146,7 +146,7 @@ export const records: KnowledgeRecord[] = [
     title: "Dharma",
     tamilTitle: "தர்மம்",
     category: "Glossary",
-    source: "DivyaNexus glossary",
+    source: "Shiva glossary",
     reference: "Context-sensitive concept",
     transliteration: "dharma",
     tamilMeaning: "சூழல், மரபு மற்றும் உரையாடலுக்கு ஏற்ப கடமை, ஒழுங்கு, நெறி அல்லது தாங்கும் கொள்கை எனப் புரிந்துகொள்ளப்படும் சொல்.",
@@ -162,7 +162,7 @@ export const records: KnowledgeRecord[] = [
     title: "A reflection on peace",
     tamilTitle: "அமைதியைப் பற்றிய சிந்தனை",
     category: "Guidance",
-    source: "DivyaNexus reflective guide",
+    source: "Shiva reflective guide",
     reference: "Source-linked starter prompt",
     tamilMeaning: "அமைதி என்பது உடனடி விளைவு அல்ல; கவனம், ஓய்வு, உறவுகள் மற்றும் சிந்தனை குறித்து மெதுவாக ஆராய ஒரு அழைப்பு.",
     englishMeaning: "Peace is not promised as an instant outcome; this is an invitation to reflect on attention, rest, relationships, and study.",
@@ -247,7 +247,7 @@ export const guidanceResponses = [
     match: ["focus", "study", "learning", "education", "wisdom", "கவனம்", "கல்வி", "ஞானம்"],
     title: "A source-aware reflection on learning",
     response:
-      "This question may encourage reflection on steady study, careful sources, and manageable practice. DivyaNexus can help surface linked records, but it does not replace formal instruction or a qualified teacher.",
+      "This question may encourage reflection on steady study, careful sources, and manageable practice. Shiva can help surface linked records, but it does not replace formal instruction or a qualified teacher.",
     records: ["rig-veda-1-50", "upanishads-introduction"],
   },
 ] as const;
@@ -260,7 +260,7 @@ export const legalContent = {
     sections: [
       ["Information we may collect", "Name and email address when a person signs in using Google or email login; bookmarks, notes, reading history, learning progress and preferences; and app interactions or device identifiers needed for account, security, analytics and app functionality."],
       ["How we use information", "Information may be used to provide login, bookmarks, offline sync, learning progress, AI explanations, notifications, and app reliability."],
-      ["Data sharing", "DivyaNexus does not sell personal data. Required service providers may process information for authentication, hosting, storage, analytics, AI processing, and app functionality."],
+      ["Data sharing", "Shiva does not sell personal data. Required service providers may process information for authentication, hosting, storage, analytics, AI processing, and app functionality."],
       ["Your choices", "You may request account deletion or app-data deletion through the dedicated pages. Browser-local items created in this website can also be exported or cleared from Library."],
     ],
   },
@@ -269,7 +269,7 @@ export const legalContent = {
     eyebrow: "Educational platform terms",
     updated: "Stage B website terms",
     sections: [
-      ["Educational purpose", "DivyaNexus offers cultural, educational, and devotional learning material. It does not provide medical, legal, financial, or professional advice."],
+      ["Educational purpose", "Shiva offers cultural, educational, and devotional learning material. It does not provide medical, legal, financial, or professional advice."],
       ["Source-aware use", "Translations, interpretations, and AI-generated explanations are distinct content types. Review labels and cited references before relying on content for study."],
       ["Respectful participation", "Do not use the platform to harass others, spread harmful claims, or present generated explanations as scripture."],
     ],
@@ -279,7 +279,7 @@ export const legalContent = {
     eyebrow: "Clear content boundaries",
     updated: "Stage B website disclosure",
     sections: [
-      ["What DivyaNexus is", "DivyaNexus is designed for general informational, educational, cultural, and devotional learning purposes."],
+      ["What Shiva is", "Shiva is designed for general informational, educational, cultural, and devotional learning purposes."],
       ["What AI explanations are", "AI-ready local explanations are clearly labelled and should not be confused with scripture quotations, formal translations, scholarly consensus, or personal advice."],
       ["When to seek help", "The platform does not diagnose, predict, or guarantee outcomes. For health, legal, financial, safety, or crisis concerns, use appropriate qualified support."],
     ],
@@ -291,7 +291,7 @@ export const legalContent = {
     sections: [
       ["What is in this starter library", "The initial collection contains clearly labelled starter records for Rig Veda references, Bhagavad Gita references, an Upanishads overview, glossary context, and reflective guidance."],
       ["What is not yet complete", "This stage does not present a complete reviewed edition, full scripture text, or exhaustive bibliography. Records identify their review status and should be expanded only with verified source editions and translation provenance."],
-      ["Editorial commitment", "DivyaNexus separates quotations, translations, traditional interpretations, AI-generated explanation, and reflective guidance. It does not copy third-party commentary as if it were an original source."],
+      ["Editorial commitment", "Shiva separates quotations, translations, traditional interpretations, AI-generated explanation, and reflective guidance. It does not copy third-party commentary as if it were an original source."],
     ],
   },
   "delete-account": {
@@ -299,8 +299,8 @@ export const legalContent = {
     eyebrow: "Google Play compliance route",
     updated: "Account-deletion information",
     sections: [
-      ["How to request deletion", "Open the DivyaNexus app, go to Profile or Settings, and select Delete Account when available. If you cannot access the app, use the Contact page and include the email address used for DivyaNexus login."],
-      ["What will be deleted", "Account profile, bookmarks, notes, reading history, learning progress, and app-specific user records associated with a DivyaNexus account."],
+      ["How to request deletion", "Open the Shiva app, go to Profile or Settings, and select Delete Account when available. If you cannot access the app, use the Contact page and include the email address used for Shiva login."],
+      ["What will be deleted", "Account profile, bookmarks, notes, reading history, learning progress, and app-specific user records associated with a Shiva account."],
       ["What may be retained", "Records required for security, fraud prevention, legal compliance, or backup recovery may be retained for a limited period where applicable."],
     ],
   },

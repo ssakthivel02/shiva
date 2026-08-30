@@ -17,8 +17,8 @@ test.describe("verified scripture reader", () => {
       await expect(page.getByRole("heading", { name: record.heading, exact: true })).toBeVisible();
       await expect(page.locator(".reader-scripture").filter({ hasText: record.original })).toBeVisible();
       await expect(page.getByText("Original-language text · verified primary text")).toBeVisible();
-      await expect(page.getByText("Tamil · DivyaNexus editorial translation")).toBeVisible();
-      await expect(page.getByText("English · DivyaNexus editorial translation")).toBeVisible();
+      await expect(page.getByText("Tamil · Shiva editorial translation")).toBeVisible();
+      await expect(page.getByText("English · Shiva editorial translation")).toBeVisible();
       await expect(page.locator(".reader-commentary strong").filter({ hasText: record.source }).first()).toBeVisible();
       await expect(page.getByRole("link", { name: "Open the source text in a new tab" })).toHaveAttribute("target", "_blank");
       await expect(page.getByText("Original-language text · not shown until an edition is verified")).toHaveCount(0);

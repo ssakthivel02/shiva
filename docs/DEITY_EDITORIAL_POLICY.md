@@ -1,4 +1,4 @@
-# DivyaNexus Deity Editorial Policy
+# Shiva Deity Editorial Policy
 
 ## Purpose
 

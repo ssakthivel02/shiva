@@ -38,7 +38,7 @@ export default function DeityDetail({ slug }: { slug: string }) {
 
   const shareRecord = async () => {
     const text = `${record.name} — ${record.strapline}`;
-    if (navigator.share) await navigator.share({ title: `${record.name} · DivyaNexus`, text, url: window.location.href });
+    if (navigator.share) await navigator.share({ title: `${record.name} · Shiva`, text, url: window.location.href });
     else await navigator.clipboard.writeText(`${text}\n${window.location.href}`);
     setStatus("Shared or copied");
     window.setTimeout(() => setStatus(""), 2200);

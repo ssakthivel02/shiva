@@ -4,10 +4,10 @@ import { Link } from "wouter";
 
 export function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
-    <Link href="/" className="brand-mark" aria-label="DivyaNexus home">
+    <Link href="/" className="brand-mark" aria-label="Shiva home">
       <img src={ASSETS.mark} alt="" aria-hidden="true" className="brand-mark__glyph" />
       {!compact && (
-        <span className="brand-mark__type" aria-label="DivyaNexus">
+        <span className="brand-mark__type" aria-label="Shiva">
           <span>Divya</span><strong>NEXUS</strong>
           <small lang="ta">திவ்ய நெக்சஸ்</small>
         </span>

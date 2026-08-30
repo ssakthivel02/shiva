@@ -1,4 +1,4 @@
-# DivyaNexus Deity Encyclopedia — Wave 3
+# Shiva Deity Encyclopedia — Wave 3
 
 Date: 28 July 2026
 

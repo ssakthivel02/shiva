@@ -1,4 +1,4 @@
-# DivyaNexus Readability & Audio Wave 8
+# Shiva Readability & Audio Wave 8
 
 Date: 28 July 2026
 

@@ -1,4 +1,4 @@
-# DivyaNexus Quality Gate Matrix
+# Shiva Quality Gate Matrix
 
 | Gate | Stage | Evidence | Failure action |
 |---|---|---|---|

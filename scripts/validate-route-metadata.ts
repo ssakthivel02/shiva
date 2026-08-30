@@ -11,7 +11,7 @@ for (const route of staticRoutes) {
     failures.push(`Missing metadata for ${route.path}`);
     continue;
   }
-  if (!meta.title.includes("DivyaNexus")) failures.push(`${route.path} title must include DivyaNexus`);
+  if (!meta.title.includes("Shiva")) failures.push(`${route.path} title must include Shiva`);
   if (meta.description.length < 40 || meta.description.length > 220) {
     failures.push(`${route.path} description length ${meta.description.length} is outside 40–220 characters`);
   }
@@ -36,7 +36,7 @@ if (duplicateTitles.length) failures.push(`Indexed route titles must be unique: 
 
 for (const sample of DIRECT_ROUTE_SAMPLES) {
   const meta = resolveRouteMeta(sample);
-  if (!meta.title.includes("DivyaNexus") || meta.label === "Page not found") {
+  if (!meta.title.includes("Shiva") || meta.label === "Page not found") {
     failures.push(`Dynamic route metadata did not resolve for ${sample}`);
   }
 }

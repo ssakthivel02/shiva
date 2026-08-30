@@ -73,5 +73,5 @@ A pull request cannot pass the source gate when the packaging workflow does not 
 - GitHub Pages build and deployment succeed.
 - The downloaded `github-pages` artifact contains both hidden paths.
 - `/.well-known/security.txt` returns HTTP 200.
-- The endpoint contains the canonical DivyaNexus disclosure URL.
+- The endpoint contains the canonical Shiva disclosure URL.
 - Complete production smoke succeeds.

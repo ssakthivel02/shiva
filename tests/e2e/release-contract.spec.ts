@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 const release = "stage-b-wave8";
 
-test.describe("DivyaNexus release contract", () => {
+test.describe("Shiva release contract", () => {
   test("application shell exposes matching release and ready markers", async ({ page }) => {
     const response = await page.goto("/", { waitUntil: "domcontentloaded" });
     expect(response?.status()).toBeLessThan(400);
@@ -31,11 +31,11 @@ test.describe("DivyaNexus release contract", () => {
   test("robots and sitemap publish canonical discovery evidence", async ({ request }) => {
     const robots = await request.get("/robots.txt");
     expect(robots.ok()).toBeTruthy();
-    expect(await robots.text()).toContain("https://divyanexus.omsaravanabhava.org/sitemap.xml");
+    expect(await robots.text()).toContain("https://shiva.omsaravanabhava.org/sitemap.xml");
     const sitemap = await request.get("/sitemap.xml");
     expect(sitemap.ok()).toBeTruthy();
     const xml = await sitemap.text();
-    expect(xml).toContain("https://divyanexus.omsaravanabhava.org/status");
-    expect(xml).toContain("https://divyanexus.omsaravanabhava.org/deities/murugan");
+    expect(xml).toContain("https://shiva.omsaravanabhava.org/status");
+    expect(xml).toContain("https://shiva.omsaravanabhava.org/deities/murugan");
   });
 });

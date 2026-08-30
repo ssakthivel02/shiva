@@ -60,7 +60,7 @@ const heroFrames = [
     tamil: "படிக்கவும், புரிந்துகொள்ளவும், பகிரவும்",
     title: <>Read the source. Feel the <em>continuity.</em></>,
     description:
-      "DivyaNexus brings together bilingual discovery, cultural learning, and transparent digital guidance in an experience built for returning learners.",
+      "Shiva brings together bilingual discovery, cultural learning, and transparent digital guidance in an experience built for returning learners.",
     label: "The living archive",
   },
   {
@@ -108,10 +108,10 @@ export default function Home({ onAsk, onSearch }: HomeProps) {
     setHeroIndex((index) => (index + direction + heroFrames.length) % heroFrames.length);
 
   const shareWisdom = async () => {
-    const text = `${daily.title} — ${daily.englishMeaning} DivyaNexus: source-aware learning.`;
+    const text = `${daily.title} — ${daily.englishMeaning} Shiva: source-aware learning.`;
     try {
       if (navigator.share) {
-        await navigator.share({ title: "DivyaNexus Daily Wisdom", text, url: window.location.href });
+        await navigator.share({ title: "Shiva Daily Wisdom", text, url: window.location.href });
       } else {
         await navigator.clipboard.writeText(text);
       }
@@ -221,7 +221,7 @@ export default function Home({ onAsk, onSearch }: HomeProps) {
           </div>
         </section>
 
-        <section className="home-trust-ribbon" aria-label="DivyaNexus experience principles">
+        <section className="home-trust-ribbon" aria-label="Shiva experience principles">
           {trustSignals.map((signal, index) => {
             const Icon = trustIcons[index];
             return (

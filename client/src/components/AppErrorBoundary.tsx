@@ -15,7 +15,7 @@ export class AppErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error("DivyaNexus application boundary", error, info.componentStack);
+    console.error("Shiva application boundary", error, info.componentStack);
   }
 
   render() {

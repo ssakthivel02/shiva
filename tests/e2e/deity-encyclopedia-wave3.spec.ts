@@ -18,7 +18,7 @@ async function waitForRoute(page: import("@playwright/test").Page) {
   await expect(page.locator("#main-content")).toBeVisible();
 }
 
-test.describe("DivyaNexus deity encyclopedia wave 3", () => {
+test.describe("Shiva deity encyclopedia wave 3", () => {
   test("directory exposes ten reviewed, navigable records", async ({ page }) => {
     const response = await page.goto("/deities", { waitUntil: "domcontentloaded" });
     expect(response?.status()).toBeLessThan(400);

@@ -12,14 +12,14 @@ export interface VerifiedScriptureRecord {
   sourceName: string;
   sourceUrl: string;
   sourceNote: string;
-  status: "Verified primary text · DivyaNexus editorial translation";
+  status: "Verified primary text · Shiva editorial translation";
   reviewedDate: string;
 }
 
 /**
  * Source-grounded scripture passages used by the reader.
  * Original Sanskrit is reproduced from the linked source. Vedic accent marks are omitted
- * for cross-device readability. Tamil and English are concise DivyaNexus editorial translations.
+ * for cross-device readability. Tamil and English are concise Shiva editorial translations.
  */
 export const verifiedScriptureRecords: Record<string, VerifiedScriptureRecord> = {
   "rig-veda-1-1-1": {
@@ -41,7 +41,7 @@ export const verifiedScriptureRecords: Record<string, VerifiedScriptureRecord> =
     sourceName: "Vedic Heritage Portal — Rigveda, Shakala Shakha, Mandala 1, Sukta 1",
     sourceUrl: "https://vedicheritage.gov.in/rigveda-shakala-shakha-mandala-01-sukta-01/",
     sourceNote: "Primary-text reference from the Vedic Heritage Portal. Display text omits Vedic accent marks; consult the source for recitation context.",
-    status: "Verified primary text · DivyaNexus editorial translation",
+    status: "Verified primary text · Shiva editorial translation",
     reviewedDate: "27 July 2026",
   },
   "rig-veda-1-42": {
@@ -62,7 +62,7 @@ export const verifiedScriptureRecords: Record<string, VerifiedScriptureRecord> =
     sourceName: "Sanskrit Wikisource — Rigveda Sukta 1.42",
     sourceUrl: "https://sa.wikisource.org/wiki/%E0%A4%8B%E0%A4%97%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%83_%E0%A4%B8%E0%A5%82%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%82_%E0%A5%A7.%E0%A5%AA%E0%A5%A8",
     sourceNote: "Samhita text cross-checked against the Sanskrit text mirror. The concise translation avoids resolving debated compounds more narrowly than the source supports.",
-    status: "Verified primary text · DivyaNexus editorial translation",
+    status: "Verified primary text · Shiva editorial translation",
     reviewedDate: "27 July 2026",
   },
   "rig-veda-1-50": {
@@ -83,7 +83,7 @@ export const verifiedScriptureRecords: Record<string, VerifiedScriptureRecord> =
     sourceName: "Sanskrit Wikisource — Rigveda Sukta 1.50",
     sourceUrl: "https://sa.wikisource.org/wiki/%E0%A4%8B%E0%A4%97%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%83_%E0%A4%B8%E0%A5%82%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%82_%E0%A5%A7.%E0%A5%AB%E0%A5%A6",
     sourceNote: "Samhita text cross-checked against the Sanskrit text mirror. Vedic accent marks are omitted in the reader display.",
-    status: "Verified primary text · DivyaNexus editorial translation",
+    status: "Verified primary text · Shiva editorial translation",
     reviewedDate: "27 July 2026",
   },
   "gita-2-47": {
@@ -103,8 +103,8 @@ export const verifiedScriptureRecords: Record<string, VerifiedScriptureRecord> =
     ],
     sourceName: "Gita Supersite, IIT Kanpur — Bhagavad Gita 2.47",
     sourceUrl: "https://www.gitasupersite.iitk.ac.in/srimad?choose=1&field_chapter_value=2&field_nsutra_value=47&language=dv&show_mool=1",
-    sourceNote: "Original Sanskrit verified against the Gita Supersite. Tamil and English are concise DivyaNexus editorial translations, not copied commentary.",
-    status: "Verified primary text · DivyaNexus editorial translation",
+    sourceNote: "Original Sanskrit verified against the Gita Supersite. Tamil and English are concise Shiva editorial translations, not copied commentary.",
+    status: "Verified primary text · Shiva editorial translation",
     reviewedDate: "27 July 2026",
   },
   "gita-4-7": {
@@ -125,7 +125,7 @@ export const verifiedScriptureRecords: Record<string, VerifiedScriptureRecord> =
     sourceName: "Gita Supersite, IIT Kanpur — Bhagavad Gita 4.7",
     sourceUrl: "https://www.gitasupersite.iitk.ac.in/srimad?choose=1&field_chapter_value=4&field_nsutra_value=7&language=dv&show_mool=1",
     sourceNote: "Original Sanskrit verified against the Gita Supersite. Interpretive traditions differ on the theological implications of manifestation.",
-    status: "Verified primary text · DivyaNexus editorial translation",
+    status: "Verified primary text · Shiva editorial translation",
     reviewedDate: "27 July 2026",
   },
 };

@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
-$Website = "https://divyanexus.omsaravanabhava.org"
-$Api = "https://api-divyanexus.omsaravanabhava.org"
+$Website = "https://shiva.omsaravanabhava.org"
+$Api = "https://api-shiva.omsaravanabhava.org"
 $ExpectedService = "divyanexus-api"
 
 $checks = [ordered]@{}
@@ -34,7 +34,7 @@ $result = foreach ($entry in $checks.GetEnumerator()) {
 $result | Format-Table -AutoSize
 
 if ($checks.Values -contains $false) {
-    throw "DivyaNexus production validation failed."
+    throw "Shiva production validation failed."
 }
 
-Write-Host "DivyaNexus production validation passed." -ForegroundColor Green
+Write-Host "Shiva production validation passed." -ForegroundColor Green

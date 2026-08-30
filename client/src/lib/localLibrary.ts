@@ -186,7 +186,7 @@ export async function importLocalLibrary(text: string): Promise<LocalLibraryImpo
     throw new Error("The selected file is not valid JSON.");
   }
   if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
-    throw new Error("The selected file is not a DivyaNexus local-data object.");
+    throw new Error("The selected file is not a Shiva local-data object.");
   }
 
   const payload = parsed as Record<string, unknown>;
@@ -243,7 +243,7 @@ export async function exportLocalLibrary() {
     format: "divyanexus-local-library",
     version: 1,
     exportedAt: new Date().toISOString(),
-    notice: "This export contains browser-local DivyaNexus data only. It does not represent synced account data.",
+    notice: "This export contains browser-local Shiva data only. It does not represent synced account data.",
     bookmarks: getBookmarks(),
     history: getHistory(),
     savedSearches: getSavedSearches(),

@@ -10,16 +10,16 @@ test.describe("quality wave metadata and navigation", () => {
     await page.goto("/glossary", { waitUntil: "domcontentloaded" });
     await waitForRoute(page);
 
-    await expect(page).toHaveTitle("Bilingual Vedic and Cultural Glossary — DivyaNexus");
+    await expect(page).toHaveTitle("Bilingual Vedic and Cultural Glossary — Shiva");
     await expect(page.locator('meta[name="description"]')).toHaveAttribute("content", /Tamil and English glossary records/);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "index,follow");
-    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", "https://divyanexus.omsaravanabhava.org/glossary");
-    await expect(page.locator('meta[property="og:url"]')).toHaveAttribute("content", "https://divyanexus.omsaravanabhava.org/glossary");
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", "https://shiva.omsaravanabhava.org/glossary");
+    await expect(page.locator('meta[property="og:url"]')).toHaveAttribute("content", "https://shiva.omsaravanabhava.org/glossary");
 
     const structuredData = await page.locator("#divyanexus-route-structured-data").textContent();
     const parsed = JSON.parse(structuredData ?? "{}");
     expect(parsed["@type"]).toBe("CollectionPage");
-    expect(parsed.url).toBe("https://divyanexus.omsaravanabhava.org/glossary");
+    expect(parsed.url).toBe("https://shiva.omsaravanabhava.org/glossary");
     expect(parsed.isPartOf.inLanguage).toEqual(["en", "ta"]);
   });
 
@@ -29,7 +29,7 @@ test.describe("quality wave metadata and navigation", () => {
     await page.getByRole("link", { name: "Enter the library" }).click();
     await expect(page).toHaveURL(/\/scriptures$/);
     await waitForRoute(page);
-    await expect(page).toHaveTitle("Scripture Learning Library — DivyaNexus");
+    await expect(page).toHaveTitle("Scripture Learning Library — Shiva");
     await expect.poll(() => page.evaluate(() => document.activeElement?.id)).toBe("main-content");
     await expect(page.locator(".route-announcer")).toHaveText("Scriptures page loaded");
   });

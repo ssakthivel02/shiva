@@ -45,7 +45,7 @@ async function openAppRoute(page: Page, route: string) {
   expect(pageErrors, `Runtime errors on ${route}`).toEqual([]);
 }
 
-test.describe("DivyaNexus production smoke coverage", () => {
+test.describe("Shiva production smoke coverage", () => {
   test("homepage renders the Stage B cinematic experience", async ({ page }) => {
     const failedImages: string[] = [];
     page.on("response", (response) => {

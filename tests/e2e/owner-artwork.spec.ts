@@ -12,7 +12,7 @@ async function openHome(page: Page) {
   await expect(page.locator('[data-owner-artwork="active"]')).toBeVisible();
 }
 
-test.describe("owner-selected DivyaNexus portal vision", () => {
+test.describe("owner-selected Shiva portal vision", () => {
   test("renders the repository-owned WebP without cropping", async ({ page }) => {
     const failedImages: string[] = [];
     page.on("response", (response) => {

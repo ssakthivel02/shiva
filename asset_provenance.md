@@ -1,4 +1,4 @@
-# DivyaNexus visual fallback provenance
+# Shiva visual fallback provenance
 
 The following visual fallbacks were obtained through image-search results labelled as **Pexels Free Stock Photo** or **Unsplash free images** and then uploaded to the project’s durable asset storage. They replace failed generated-image placeholders in the premium rebuild.
 

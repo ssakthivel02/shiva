@@ -1,4 +1,4 @@
-# DivyaNexus Premium Visual Rebuild
+# Shiva Premium Visual Rebuild
 
 - [x] Consolidate both revised-brief attachments and audit the deployed desktop and mobile experience.
 - [x] Replace the current visual direction in `ideas.md` with an immersive, image-first visual-storytelling system.

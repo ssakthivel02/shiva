@@ -19,7 +19,7 @@ export default function NotFound() {
         <p className="scene-kicker">404 · Unmarked path</p>
         <p lang="ta" className="not-found-wave6__tamil">இந்தப் பாதை இன்னும் குறிக்கப்படவில்லை</p>
         <h1>The requested path is outside the current archive.</h1>
-        <p>The address may be incomplete, retired or not yet part of the reviewed DivyaNexus route collection. No substitute content has been invented for it.</p>
+        <p>The address may be incomplete, retired or not yet part of the reviewed Shiva route collection. No substitute content has been invented for it.</p>
         <code>{location}</code>
         <Link href="/" className="button button--primary"><Home size={17} aria-hidden="true" />Return home</Link>
       </section>

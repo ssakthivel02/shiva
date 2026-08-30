@@ -22,7 +22,7 @@ export function SearchOverlay({ open, onOpenChange }: { open: boolean; onOpenCha
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="search-dialog" aria-describedby={undefined}>
-        <DialogTitle className="sr-only">Search DivyaNexus</DialogTitle>
+        <DialogTitle className="sr-only">Search Shiva</DialogTitle>
         <div className="search-dialog__input">
           <Search size={21} aria-hidden="true" />
           <input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && query.trim()) saveSearch(query); }} placeholder="Search Tamil, English, or transliteration…" aria-label="Search Tamil, English, or transliteration" />

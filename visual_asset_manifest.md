@@ -1,4 +1,4 @@
-# DivyaNexus — Divine Observatory Cinema Asset Manifest
+# Shiva — Divine Observatory Cinema Asset Manifest
 
 | Asset | Primary placement | Responsive treatment | Alt-text intent |
 |---|---|---|---|
@@ -13,4 +13,4 @@
 | Kids story | Kids universe | Brighter 3:2 crop, touch-first story cards | Children sharing an illuminated folio in a storybook scene |
 | Audio ritual | Audio route / mini-player expansion | 3:2 crop, visual accompaniment only | Lamp and resonant vessel with soft gold sound arcs |
 
-All generated artwork is original to DivyaNexus’s web experience, used as visual storytelling rather than source evidence. Scripture quotations, translations, and references remain separately labelled in the product content model.
+All generated artwork is original to Shiva’s web experience, used as visual storytelling rather than source evidence. Scripture quotations, translations, and references remain separately labelled in the product content model.

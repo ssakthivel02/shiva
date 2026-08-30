@@ -1,4 +1,4 @@
-# DivyaNexus Scripture Content Wave 1
+# Shiva Scripture Content Wave 1
 
 Date: 27 July 2026
 
@@ -47,7 +47,7 @@ The existing Upanishads introduction remains an editorial overview. It does not 
 
 - Original Sanskrit is shown separately from translation and reflection.
 - Vedic accent marks are omitted in the application display for cross-device readability.
-- Tamil and English renderings are original DivyaNexus editorial translations.
+- Tamil and English renderings are original Shiva editorial translations.
 - No third-party commentary is copied into the records.
 - Word notes are concise orientation aids, not exhaustive philological definitions.
 - The source URL and review date remain visible in every completed record.

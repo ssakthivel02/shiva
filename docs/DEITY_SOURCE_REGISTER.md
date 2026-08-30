@@ -1,4 +1,4 @@
-# DivyaNexus Deity Source Register
+# Shiva Deity Source Register
 
 Date reviewed: 28 July 2026
 

@@ -1,5 +1,5 @@
 /**
- * DivyaNexus audio provides user-initiated synthetic speech for accessible study.
+ * Shiva audio provides user-initiated synthetic speech for accessible study.
  * It never labels a device voice as a reviewed human recitation.
  */
 import { useMemo, useState } from "react";
@@ -51,7 +51,7 @@ function buildSpeechItems(recordId: string): SpeechItem[] {
       text: record.tamilTranslation,
       lang: "ta-IN",
       rate: 0.82,
-      sourceLabel: `${record.title} · DivyaNexus Tamil editorial translation`,
+      sourceLabel: `${record.title} · Shiva Tamil editorial translation`,
     },
     {
       id: `${record.id}-sanskrit`,
@@ -78,7 +78,7 @@ function buildSpeechItems(recordId: string): SpeechItem[] {
       text: record.englishTranslation,
       lang: "en-GB",
       rate: 0.88,
-      sourceLabel: `${record.title} · DivyaNexus English editorial translation`,
+      sourceLabel: `${record.title} · Shiva English editorial translation`,
     },
   ];
 }

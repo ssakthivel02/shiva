@@ -1,4 +1,4 @@
-# DivyaNexus Owner Artwork Wave 7
+# Shiva Owner Artwork Wave 7
 
 Date: 28 July 2026
 

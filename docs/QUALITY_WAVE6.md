@@ -1,4 +1,4 @@
-# DivyaNexus Quality Wave 6
+# Shiva Quality Wave 6
 
 Date: 28 July 2026
 
@@ -48,7 +48,7 @@ Strengthen the production portal after Editorial Depth Wave 5 by improving route
 38. Malformed JSON rejection with a clear message.
 39. Individual local-note deletion.
 40. Browser storage usage and quota indication.
-41. Guided DivyaNexus 404 recovery experience.
+41. Guided Shiva 404 recovery experience.
 42. Escape-key closure for navigation menus.
 43. Automatic menu closure on navigation.
 44. `aria-current` state for active navigation.

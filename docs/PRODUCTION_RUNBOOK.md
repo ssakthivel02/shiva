@@ -1,4 +1,4 @@
-# DivyaNexus Production Runbook
+# Shiva Production Runbook
 
 ## Release owner checklist
 
@@ -7,8 +7,8 @@
 3. Confirm the release identifier in `client/src/config/release.ts`, `client/index.html`, `health.json`, and production-smoke workflow is identical.
 4. Confirm critical direct routes exist as materialized `dist/public/<route>/index.html` shells.
 5. Merge only the validated head commit.
-6. Watch **Deploy DivyaNexus React App** until both build and deploy jobs succeed.
-7. Watch **Verify DivyaNexus Production** until release, commit, assets, health, and direct-route checks succeed.
+6. Watch **Deploy Shiva React App** until both build and deploy jobs succeed.
+7. Watch **Verify Shiva Production** until release, commit, assets, health, and direct-route checks succeed.
 8. Open `/status` and compare the HTML marker, React marker, and declared release.
 9. Verify `/release.json` contains the merged commit SHA.
 10. Record the merge commit, deployment run, verification run, and completion time.

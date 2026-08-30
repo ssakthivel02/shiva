@@ -1,4 +1,4 @@
-# DivyaNexus Home Experience Wave 2
+# Shiva Home Experience Wave 2
 
 Date: 28 July 2026
 
