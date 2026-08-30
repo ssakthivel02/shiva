@@ -1,0 +1,6 @@
+Contact: https://shiva.omsaravanabhava.org/contact
+Policy: https://shiva.omsaravanabhava.org/privacy
+Canonical: https://shiva.omsaravanabhava.org/.well-known/security.txt
+Preferred-Languages: en, ta
+Expires: 2027-07-28T00:00:00Z
+Acknowledgments: https://shiva.omsaravanabhava.org/about

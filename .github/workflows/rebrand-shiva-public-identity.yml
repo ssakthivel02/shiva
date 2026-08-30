@@ -1,0 +1,103 @@
+name: Rebrand imported donor public identity to Shiva
+
+on:
+  push:
+    branches:
+      - migration/divyanexus-hitech-v43-52
+    paths:
+      - .github/workflows/rebrand-shiva-public-identity.yml
+
+permissions:
+  contents: write
+
+jobs:
+  rebrand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/divyanexus-hitech-v43-52
+          fetch-depth: 1
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Replace public product/domain identity without changing donor evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          root = Path('.')
+          allowed = {'.html','.tsx','.ts','.js','.mjs','.json','.jsonc','.xml','.txt','.md','.css','.ps1','.yml','.yaml','.webmanifest'}
+          protected = {
+              'MIGRATION_INTAKE.md',
+              'SHIVA_SOURCE_MIGRATION_CONTRACT.md',
+              'SOURCE_DONOR_COMMIT.txt',
+              'docs/RC_OWNER_SUPPLIED_METADATA.json',
+              'docs/RC_ARCHIVE_VERIFICATION.md',
+              'docs/OWNER_APPROVAL_STATUS.md',
+              'docs/RELEASE_GATES.md',
+              'docs/MIGRATION_EXECUTION_RECORD.md',
+          }
+          replacements = [
+              ('https://divyanexus.omsaravanabhava.org', 'https://shiva.omsaravanabhava.org'),
+              ('divyanexus.omsaravanabhava.org', 'shiva.omsaravanabhava.org'),
+              ('DivyaNexus', 'Shiva'),
+              ('Ask Divya', 'Ask Shiva'),
+              ('Divya’s', 'Shiva’s'),
+              ("Divya's", "Shiva's"),
+              ('Divya will', 'Shiva will'),
+          ]
+          changed = []
+          for path in root.rglob('*'):
+              if not path.is_file() or '.git' in path.parts or '.github' in path.parts or 'node_modules' in path.parts or 'dist' in path.parts:
+                  continue
+              rel = path.as_posix()
+              if rel.startswith('./'):
+                  rel = rel[2:]
+              if rel in protected or path.suffix.lower() not in allowed:
+                  continue
+              try:
+                  text = path.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  continue
+              new = text
+              for old, replacement in replacements:
+                  new = new.replace(old, replacement)
+              if new != text:
+                  path.write_text(new, encoding='utf-8')
+                  changed.append(rel)
+          print(f'Rebranded {len(changed)} text files')
+          for rel in changed:
+              print(rel)
+          PY
+          printf '%s\n' 'shiva.omsaravanabhava.org' > CNAME
+
+      - name: Validate rebranded source before committing
+        run: |
+          pnpm check
+          pnpm build
+
+      - name: Commit validated public identity migration
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No rebrand changes.'
+            exit 0
+          fi
+          git commit -m 'Complete Shiva public identity and manifest migration'
+          git push origin HEAD:migration/divyanexus-hitech-v43-52

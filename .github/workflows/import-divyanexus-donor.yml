@@ -1,0 +1,76 @@
+name: Import pinned DivyaNexus donor into Shiva
+
+on:
+  push:
+    branches:
+      - migration/divyanexus-hitech-v43-52
+    paths:
+      - .github/workflows/import-divyanexus-donor.yml
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Shiva migration branch
+        uses: actions/checkout@v4
+        with:
+          ref: migration/divyanexus-hitech-v43-52
+          fetch-depth: 1
+
+      - name: Clone pinned public donor
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch main https://github.com/ssakthivel02/DivyaNexus.git /tmp/divyanexus-donor
+          test "$(git -C /tmp/divyanexus-donor rev-parse HEAD)" = "5ea33da2fd64407f09f9df92b9e973dfbc6a700c"
+
+      - name: Copy donor source without touching Shiva control files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/workflows/' \
+            --exclude='CNAME' \
+            --exclude='README.md' \
+            --exclude='SHIVA_SOURCE_MIGRATION_CONTRACT.md' \
+            --exclude='MIGRATION_INTAKE.md' \
+            --exclude='docs/RC_OWNER_SUPPLIED_METADATA.json' \
+            --exclude='docs/RC_ARCHIVE_VERIFICATION.md' \
+            --exclude='docs/OWNER_APPROVAL_STATUS.md' \
+            --exclude='docs/RELEASE_GATES.md' \
+            --exclude='docs/MIGRATION_EXECUTION_RECORD.md' \
+            /tmp/divyanexus-donor/ ./
+
+      - name: Apply Shiva package identity and provenance marker
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const file = 'package.json';
+          const pkg = JSON.parse(fs.readFileSync(file, 'utf8'));
+          pkg.name = 'shiva_web';
+          pkg.private = true;
+          pkg.description = 'Shiva hi-tech spiritual intelligence and knowledge platform';
+          fs.writeFileSync(file, JSON.stringify(pkg, null, 2) + '\n');
+          NODE
+          printf '%s\n' 'ssakthivel02/DivyaNexus@5ea33da2fd64407f09f9df92b9e973dfbc6a700c' > SOURCE_DONOR_COMMIT.txt
+          printf '%s\n' 'shiva.omsaravanabhava.org' > CNAME
+
+      - name: Commit imported source to migration branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'No donor changes to import.'
+            exit 0
+          fi
+          git commit -m 'Import pinned DivyaNexus hi-tech donor source for Shiva'
+          git push origin HEAD:migration/divyanexus-hitech-v43-52
