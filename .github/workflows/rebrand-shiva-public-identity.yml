@@ -38,7 +38,7 @@ jobs:
           from pathlib import Path
 
           root = Path('.')
-          allowed = {'.html','.tsx','.ts','.js','.mjs','.json','.jsonc','.xml','.txt','.md','.css','.ps1','.yml','.yaml'}
+          allowed = {'.html','.tsx','.ts','.js','.mjs','.json','.jsonc','.xml','.txt','.md','.css','.ps1','.yml','.yaml','.webmanifest'}
           protected = {
               'MIGRATION_INTAKE.md',
               'SHIVA_SOURCE_MIGRATION_CONTRACT.md',
@@ -53,6 +53,10 @@ jobs:
               ('https://divyanexus.omsaravanabhava.org', 'https://shiva.omsaravanabhava.org'),
               ('divyanexus.omsaravanabhava.org', 'shiva.omsaravanabhava.org'),
               ('DivyaNexus', 'Shiva'),
+              ('Ask Divya', 'Ask Shiva'),
+              ('Divya’s', 'Shiva’s'),
+              ("Divya's", "Shiva's"),
+              ('Divya will', 'Shiva will'),
           ]
           changed = []
           for path in root.rglob('*'):
@@ -95,5 +99,5 @@ jobs:
             echo 'No rebrand changes.'
             exit 0
           fi
-          git commit -m 'Rebrand imported hi-tech source public identity to Shiva'
+          git commit -m 'Complete Shiva public identity and manifest migration'
           git push origin HEAD:migration/divyanexus-hitech-v43-52
