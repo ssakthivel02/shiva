@@ -1,57 +1,17 @@
-# Shiva Hi-Tech Website — Repository Bootstrap
+# Shiva Hi-Tech Website
 
-Target repository: `ssakthivel02/shiva`
-Target production domain: `shiva.omsaravanabhava.org`
+Independent destination repository for the Shiva hi-tech spiritual intelligence and knowledge platform.
 
-## Important separation rule
+Production target: `https://shiva.omsaravanabhava.org/`
 
-- Existing `ssakthivel02/DivyaNexus` remains untouched and continues as DivyaNexus.
-- Shiva is a separate new hi-tech website/product.
-- The current DivyaNexus `main` branch is the donor/reference source only.
-- Do not repoint the existing DivyaNexus Pages domain or change its CNAME.
-- Do not merge the previously cancelled DivyaNexus→Shiva migration branch/PR.
+## Migration boundary
 
-## Immediate repository creation
+The existing `ssakthivel02/DivyaNexus` repository and `https://divyanexus.omsaravanabhava.org/` production website are donor/reference sources only and remain unchanged. Shiva is a separate product and deployment.
 
-Create a NEW GitHub repository:
+## Current intake
 
-- Name: `shiva`
-- Visibility: Public
-- README: optional (this package already contains one)
-- .gitignore/license: leave blank initially unless GitHub requires a choice
+A controlled migration branch imports the validated current DivyaNexus hi-tech source as a donor baseline, then rebrands and validates it independently for Shiva. The owner-supplied V43.52 RC metadata is recorded separately; the exact RC ZIP must be hash-verified if/when its archive bytes are attached.
 
-Then upload the files from the hi-tech Shiva source package/build into the new repository.
+## Release gates
 
-## Donor/reference source
-
-Current source/reference repository:
-`ssakthivel02/DivyaNexus`
-Branch:
-`main`
-
-Use this only to selectively reuse validated content/data/components that are appropriate for Shiva.
-Do not alter the existing DivyaNexus repository while building Shiva.
-
-## Deployment target
-
-GitHub Pages custom domain:
-`shiva.omsaravanabhava.org`
-
-Cloudflare DNS was already prepared separately; do not change the old DivyaNexus DNS record.
-
-## Launch sequence
-
-1. Create `ssakthivel02/shiva` as a separate public repository.
-2. Upload/import the Shiva hi-tech source into this repo.
-3. Rebrand public identity to Shiva.
-4. Set canonical/OG/manifest/sitemap/robots/security/legal links to the Shiva domain.
-5. Add CI validation and GitHub Pages deployment.
-6. Validate build, routes, assets, PWA/service worker, mobile layouts, accessibility and legal pages.
-7. Only after CI is green, set GitHub Pages custom domain to `shiva.omsaravanabhava.org`.
-8. Verify HTTPS and production routes.
-9. Keep DivyaNexus unchanged throughout.
-
-## Safety constraints
-
-Never copy secrets, tokens, API credentials, private keys, local `.env` values, or generated credentials.
-Review asset licences/provenance before publishing copied media.
+No production-ready claim is permitted until the Shiva build, tests, route/PWA checks, public identity/domain sweep, rights/policy gates, GitHub Pages deployment, HTTPS and live-domain smoke tests pass.

@@ -1,0 +1,3 @@
+Contact: https://shiva.omsaravanabhava.org/contact
+Canonical: https://shiva.omsaravanabhava.org/.well-known/security.txt
+Preferred-Languages: en, ta
