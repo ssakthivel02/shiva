@@ -48,7 +48,6 @@ jobs:
               'docs/OWNER_APPROVAL_STATUS.md',
               'docs/RELEASE_GATES.md',
               'docs/MIGRATION_EXECUTION_RECORD.md',
-              '.github/workflows/import-divyanexus-donor.yml',
           }
           replacements = [
               ('https://divyanexus.omsaravanabhava.org', 'https://shiva.omsaravanabhava.org'),
@@ -57,9 +56,11 @@ jobs:
           ]
           changed = []
           for path in root.rglob('*'):
-              if not path.is_file() or '.git' in path.parts or 'node_modules' in path.parts or 'dist' in path.parts:
+              if not path.is_file() or '.git' in path.parts or '.github' in path.parts or 'node_modules' in path.parts or 'dist' in path.parts:
                   continue
-              rel = path.as_posix().lstrip('./')
+              rel = path.as_posix()
+              if rel.startswith('./'):
+                  rel = rel[2:]
               if rel in protected or path.suffix.lower() not in allowed:
                   continue
               try:
