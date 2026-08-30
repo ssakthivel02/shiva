@@ -1,8 +1,6 @@
 {
   "name": "shiva_web",
   "version": "1.0.0",
-  "private": true,
-  "description": "Shiva hi-tech spiritual intelligence and knowledge platform",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -98,5 +96,7 @@
     "overrides": {
       "tailwindcss>nanoid": "3.3.7"
     }
-  }
+  },
+  "private": true,
+  "description": "Shiva hi-tech spiritual intelligence and knowledge platform"
 }
