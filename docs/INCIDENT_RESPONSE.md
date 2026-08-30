@@ -11,7 +11,7 @@
 
 ### SEV-2 — High
 
-- Major routes, search, Ask Divya, scripture, or deity experiences fail.
+- Major routes, search, Ask Shiva, scripture, or deity experiences fail.
 - Custom domain serves a stale release after a completed deployment.
 - Direct routes or core assets consistently fail.
 

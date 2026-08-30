@@ -4,7 +4,7 @@
 |---|---|---|---|
 | Observatory manuscript hero | Homepage visual stage | Wide desktop crop; dark left text-safe crop on mobile | Open palm-leaf manuscript, lamp, temple silhouette, and constellations |
 | Dawn knowledge path | Hero carousel / final threshold | Wide crop with right-weighted visual focus | Manuscript pathway toward a temple observatory at dawn |
-| Ask Divya core | Ask Divya gateway and prompt stage | Focused 3:2 crop; descriptive `alt` | Luminous source core with orbiting knowledge fragments |
+| Ask Shiva core | Ask Shiva gateway and prompt stage | Focused 3:2 crop; descriptive `alt` | Luminous source core with orbiting knowledge fragments |
 | Scripture universe | Scripture route / featured shelf | Wide crop, lazy loaded beyond hero | Illuminated manuscript bundles in a celestial archive |
 | Temple journey | Temple discovery route | Wide crop with route-compatible subject position | Temple silhouette and tank at blue-gold dawn |
 | Deity symbols | Deity universe | 3:2 crop, no deity-face representation | Museum-style tableau of respectful sacred symbols |

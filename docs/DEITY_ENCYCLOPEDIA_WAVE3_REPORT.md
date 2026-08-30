@@ -28,7 +28,7 @@ Replace the ten homepage-level deity orientation cards with a real, navigable bi
 18. Added external museum and scholarly references.
 19. Added local bookmarks.
 20. Added copy and share controls.
-21. Added Ask Divya contextual links.
+21. Added Ask Shiva contextual links.
 22. Added related-deity navigation.
 23. Added an honest unknown-record fallback.
 24. Added responsive layouts from 320px to desktop.

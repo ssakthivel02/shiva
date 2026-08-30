@@ -228,7 +228,7 @@ export default function ScriptureReader({ kind }: { kind: keyof typeof readerSet
 
               <div className="reader-actions">
                 <a className="button" href="#reader-audio"><Headphones size={15} aria-hidden="true" />Listen here</a>
-                <Link className="button" href={`/ask-divya?context=${encodeURIComponent(record.id)}`}><MessageCircleQuestion size={15} aria-hidden="true" />Ask Divya</Link>
+                <Link className="button" href={`/ask-divya?context=${encodeURIComponent(record.id)}`}><MessageCircleQuestion size={15} aria-hidden="true" />Ask Shiva</Link>
                 <button className="button" onClick={() => setSaved(toggleBookmark(record.id).includes(record.id))}>{saved ? <Check size={15} aria-hidden="true" /> : <Bookmark size={15} aria-hidden="true" />}{saved ? "Saved locally" : "Bookmark"}</button>
                 <button className="button" onClick={copyReference}><Copy size={15} aria-hidden="true" />Copy reference</button>
                 <button className="button" onClick={share}><Share2 size={15} aria-hidden="true" />Share</button>

@@ -48,7 +48,7 @@ The site follows an **immersive visual procession**. The hero is a cinematic sta
 
 ### Interaction Philosophy
 
-Interactions should feel like **revealing a layer of a living archive**. Desktop pointer movement creates a subtle light response, shallow art-layer parallax, and constrained card tilt. On touch, the same hierarchy is available through clear tap, swipe, and bottom-sheet patterns. The flagship Ask Divya experience uses a luminous knowledge core, visibly-labelled answer layers, and conversation routes rather than a generic message bubble. Every nonessential motion honors reduced-motion settings.
+Interactions should feel like **revealing a layer of a living archive**. Desktop pointer movement creates a subtle light response, shallow art-layer parallax, and constrained card tilt. On touch, the same hierarchy is available through clear tap, swipe, and bottom-sheet patterns. The flagship Ask Shiva experience uses a luminous knowledge core, visibly-labelled answer layers, and conversation routes rather than a generic message bubble. Every nonessential motion honors reduced-motion settings.
 
 ### Animation
 
@@ -86,8 +86,8 @@ The logo continues as the **open lotus-orbit mark**, now placed as a radiant gol
 - Hero and feature art use cinematic landscape or portrait crops with explicit text-safe areas, alternate crop positions, lazy loading beyond the hero, and non-repeated assets.
 - Shared surfaces are based on illuminated-manuscript frames, lightway arcs, and lotus threshold geometry—not generic rounded purple panels.
 - The mini player is a compact launcher by default, adds safe-area-aware document clearance, and only expands into a bottom sheet after intent.
-- Mobile navigation, galleries, and Ask Divya are touch-first compositions; hover-only affordances are never essential.
+- Mobile navigation, galleries, and Ask Shiva are touch-first compositions; hover-only affordances are never essential.
 - Legal routes remain quiet and readable but retain a small visual threshold and a compact accordion footer.
 - Every route contains a non-card scene primitive: cinematic landscape threshold, illuminated manuscript chamber, constellation path map, lotus/yantra threshold, or temple-architecture corridor.
 - Scripture and study surfaces use manuscript ivory, a warm inner edge, source pin, and archival texture rather than only dark panels.
-- Ask Divya remains a luminous knowledge-core ritual with labelled source, generated reflection, and next-step layers; it is never framed as a generic chatbot.
+- Ask Shiva remains a luminous knowledge-core ritual with labelled source, generated reflection, and next-step layers; it is never framed as a generic chatbot.

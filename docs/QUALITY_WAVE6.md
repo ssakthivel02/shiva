@@ -36,7 +36,7 @@ Strengthen the production portal after Editorial Depth Wave 5 by improving route
 26. Stale-while-revalidate handling for public static assets.
 27. Service-worker update lifecycle evidence.
 28. Expanded installable web-app manifest.
-29. Search, Ask Divya, Scriptures and Library PWA shortcuts.
+29. Search, Ask Shiva, Scriptures and Library PWA shortcuts.
 30. Mobile-web-app and Apple web-app metadata.
 31. Privacy-oriented referrer policy.
 32. Hero-image preload for initial rendering.

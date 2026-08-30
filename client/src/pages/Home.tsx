@@ -158,7 +158,7 @@ export default function Home({ onAsk, onSearch }: HomeProps) {
             </div>
 
             <div className="cinema-hero__actions">
-              <button className="button button--primary button--glow" onClick={onAsk}><Sparkles size={17} aria-hidden="true" />Ask Divya</button>
+              <button className="button button--primary button--glow" onClick={onAsk}><Sparkles size={17} aria-hidden="true" />Ask Shiva</button>
               <Link className="button button--glass" href="/explore"><Compass size={17} aria-hidden="true" />Explore the universe</Link>
               <a className="button button--glass" href="#owner-portal-vision"><Stars size={17} aria-hidden="true" />View portal vision</a>
             </div>
@@ -272,12 +272,12 @@ export default function Home({ onAsk, onSearch }: HomeProps) {
             <div className="ask-gateway__copy">
               <p className="scene-kicker"><Sparkles size={14} aria-hidden="true" />A new kind of spiritual guidance</p>
               <p className="ask-gateway__tamil" lang="ta">கேள்வியை ஒரு பாதையாக மாற்றுங்கள்</p>
-              <h2 id="ask-preview-title">Ask Divya. Explore deeper.</h2>
+              <h2 id="ask-preview-title">Ask Shiva. Explore deeper.</h2>
               <p>Bring a question about an idea, a verse, a festival, or everyday reflection. Divya responds with a visible distinction between primary text, editorial translation, interpretation, generated explanation, and prompts for further learning.</p>
-              <div className="ask-gateway__prompts" aria-label="Suggested Ask Divya prompts">
+              <div className="ask-gateway__prompts" aria-label="Suggested Ask Shiva prompts">
                 {["What is dharma in everyday life?", "Where can I begin with the Gita?", "Tell me about a temple journey"].map((prompt) => <button key={prompt} onClick={onAsk}>{prompt}<ArrowRight size={15} aria-hidden="true" /></button>)}
               </div>
-              <div className="cinema-hero__actions"><button className="button button--primary button--glow" onClick={onAsk}><Sparkles size={17} aria-hidden="true" />Open Ask Divya</button><button className="button button--glass" onClick={onSearch}><Search size={17} aria-hidden="true" />Search a source first</button></div>
+              <div className="cinema-hero__actions"><button className="button button--primary button--glow" onClick={onAsk}><Sparkles size={17} aria-hidden="true" />Open Ask Shiva</button><button className="button button--glass" onClick={onSearch}><Search size={17} aria-hidden="true" />Search a source first</button></div>
             </div>
             <div className="ask-gateway__art"><img src={ASSETS.ask} alt="Luminous knowledge core surrounded by orbiting light fragments" loading="lazy" /><div className="ask-gateway__ring" aria-hidden="true" /><span className="art-source-pin">Source-aware response layers</span></div>
           </Reveal>
@@ -341,7 +341,7 @@ export default function Home({ onAsk, onSearch }: HomeProps) {
         </section>
 
         <section className="cinema-section cinema-section--threshold" aria-labelledby="threshold-title">
-          <Reveal className="final-threshold"><img src={ASSETS.heroDawn} alt="" loading="lazy" /><div className="final-threshold__veil" /><div><p className="scene-kicker"><Stars size={14} aria-hidden="true" />Begin your journey</p><h2 id="threshold-title">Let the next question lead somewhere meaningful.</h2><p>Build a personal local library, return to an unfinished thread, or begin with a source that feels close to home.</p><div className="cinema-hero__actions"><button className="button button--primary button--glow" onClick={onAsk}><Sparkles size={17} aria-hidden="true" />Begin with Ask Divya</button><Link className="button button--glass" href="/library">Open my library <ArrowRight size={16} aria-hidden="true" /></Link></div></div></Reveal>
+          <Reveal className="final-threshold"><img src={ASSETS.heroDawn} alt="" loading="lazy" /><div className="final-threshold__veil" /><div><p className="scene-kicker"><Stars size={14} aria-hidden="true" />Begin your journey</p><h2 id="threshold-title">Let the next question lead somewhere meaningful.</h2><p>Build a personal local library, return to an unfinished thread, or begin with a source that feels close to home.</p><div className="cinema-hero__actions"><button className="button button--primary button--glow" onClick={onAsk}><Sparkles size={17} aria-hidden="true" />Begin with Ask Shiva</button><Link className="button button--glass" href="/library">Open my library <ArrowRight size={16} aria-hidden="true" /></Link></div></div></Reveal>
         </section>
       </main>
     </>

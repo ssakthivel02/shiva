@@ -10,7 +10,7 @@ import { Reveal } from "@/components/Reveal";
 const featuredOrbits = [
   { route: "/scriptures", title: "Scripture universe", tamil: "சாஸ்திர உலகம்", detail: "Enter through bounded reader records and explicit edition status.", image: ASSETS.scripture, alt: "Illuminated manuscript archive under a celestial canopy", span: "explore-orbit--scripture" },
   { route: "/temples", title: "Temple journeys", tamil: "ஆலயப் பயணங்கள்", detail: "Meet place, architecture, and regional practice without inventing travel claims.", image: ASSETS.temple, alt: "Temple at twilight with a reflecting water tank", span: "explore-orbit--temple" },
-  { route: "/ask-divya", title: "Ask Divya", tamil: "திவ்யாவிடம் கேளுங்கள்", detail: "Use a labelled local guide to turn a broad question into a careful next step.", image: ASSETS.ask, alt: "Luminous knowledge core in a midnight-blue atmosphere", span: "explore-orbit--ask" },
+  { route: "/ask-divya", title: "Ask Shiva", tamil: "திவ்யாவிடம் கேளுங்கள்", detail: "Use a labelled local guide to turn a broad question into a careful next step.", image: ASSETS.ask, alt: "Luminous knowledge core in a midnight-blue atmosphere", span: "explore-orbit--ask" },
 ];
 
 export default function Explore({ onSearch }: { onSearch: () => void }) {

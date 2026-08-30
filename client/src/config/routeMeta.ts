@@ -27,17 +27,17 @@ export const routeMetaByPath: Readonly<Record<string, RouteMeta>> = {
     label: "Explore",
   },
   "/ask-divya": {
-    title: "Ask Divya — Source-Aware Local Guidance — Shiva",
+    title: "Ask Shiva — Source-Aware Local Guidance — Shiva",
     description: "Ask a bounded question and receive a local learning response that keeps source text, editorial translation, interpretation and generated explanation distinct.",
     schemaType: "WebPage",
-    label: "Ask Divya",
+    label: "Ask Shiva",
   },
   "/ask": {
-    title: "Ask Divya — Shiva",
+    title: "Ask Shiva — Shiva",
     description: "Open the source-aware Shiva question pathway.",
     robots: "noindex,follow",
     schemaType: "WebPage",
-    label: "Ask Divya alias",
+    label: "Ask Shiva alias",
   },
   "/search": {
     title: "Tamil and English Knowledge Search — Shiva",

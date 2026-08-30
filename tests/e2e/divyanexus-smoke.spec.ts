@@ -56,7 +56,7 @@ test.describe("Shiva production smoke coverage", () => {
 
     await openAppRoute(page, "/");
     await expect(page.getByRole("heading", { name: /A universe of wisdom/i })).toBeVisible();
-    await expect(page.getByRole("button", { name: "Ask Divya" }).first()).toBeVisible();
+    await expect(page.getByRole("button", { name: "Ask Shiva" }).first()).toBeVisible();
     await expect(page.getByRole("link", { name: /Explore the universe/i })).toBeVisible();
     expect(failedImages).toEqual([]);
   });
@@ -150,11 +150,11 @@ test.describe("Shiva production smoke coverage", () => {
     await expect(page.getByRole("heading", { name: "Shiva", exact: true })).toBeVisible();
   });
 
-  test("Ask Divya produces a transparently bounded local response", async ({ page }) => {
+  test("Ask Shiva produces a transparently bounded local response", async ({ page }) => {
     await openAppRoute(page, "/ask-divya");
     await expect(page.getByText(/LOCAL GUIDE/i)).toBeVisible();
 
-    const input = page.getByRole("textbox", { name: "Your question for Ask Divya" });
+    const input = page.getByRole("textbox", { name: "Your question for Ask Shiva" });
     await input.fill("What is dharma?");
     await page.getByRole("button", { name: "Send question" }).click();
 

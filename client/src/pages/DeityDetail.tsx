@@ -54,7 +54,7 @@ export default function DeityDetail({ slug }: { slug: string }) {
         </button>
         <button onClick={copyRecord}><Copy size={16} aria-hidden="true" />Copy reference</button>
         <button onClick={shareRecord}><Share2 size={16} aria-hidden="true" />Share</button>
-        <Link href={`/ask-divya?context=${encodeURIComponent(recordId)}`}><MessageCircleQuestion size={16} aria-hidden="true" />Ask Divya with context</Link>
+        <Link href={`/ask-divya?context=${encodeURIComponent(recordId)}`}><MessageCircleQuestion size={16} aria-hidden="true" />Ask Shiva with context</Link>
         {status && <span role="status">{status}</span>}
       </section>
       <section className="deity-detail-layout">

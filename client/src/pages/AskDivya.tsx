@@ -1,5 +1,5 @@
 /**
- * Divine Observatory Cinema: Ask Divya is a guided reflection studio, not a generic chat box.
+ * Divine Observatory Cinema: Ask Shiva is a guided reflection studio, not a generic chat box.
  * Every answer visibly separates source signals, interpretation, generated explanation, and a next study path.
  */
 import { useMemo, useState } from "react";
@@ -43,12 +43,12 @@ export default function AskDivya() {
           <p className="scene-kicker"><Stars size={14} aria-hidden="true" />Guided reflection studio</p>
           <p className="ask-cinema-hero__tamil" lang="ta">கவனமான கேள்வி, தெளிவான பாதை</p>
           <h1>Ask with care. <em>Explore deeper.</em></h1>
-          <p>Ask Divya helps you begin a source-aware study thread in Tamil or English. It labels what is a starter record, what is a generated explanation, and what remains open for further reading.</p>
+          <p>Ask Shiva helps you begin a source-aware study thread in Tamil or English. It labels what is a starter record, what is a generated explanation, and what remains open for further reading.</p>
           <div className="ask-cinema-hero__signals"><span><BookOpenCheck size={14} aria-hidden="true" />Source links visible</span><span><Sparkles size={14} aria-hidden="true" />Generated reflection labelled</span><span><CircleHelp size={14} aria-hidden="true" />No certainty claims</span></div>
         </div>
       </section>
 
-      <section className="ask-studio" aria-label="Ask Divya studio">
+      <section className="ask-studio" aria-label="Ask Shiva studio">
         <aside className="ask-mode-rail" aria-label="Choose an explanation mode">
           <div className="ask-mode-rail__intro"><p className="scene-kicker">Choose a lens</p><h2>The question stays yours.</h2><p>A lens changes the shape of the explanation—not the status of the source material.</p></div>
           <div className="ask-mode-rail__options">
@@ -57,10 +57,10 @@ export default function AskDivya() {
           <Link className="ask-mode-rail__method" href="/sources"><BookOpenCheck size={16} aria-hidden="true" />How source layers work <ArrowRight size={15} aria-hidden="true" /></Link>
         </aside>
 
-        <section className="ask-conversation-stage" aria-label="Ask Divya conversation">
+        <section className="ask-conversation-stage" aria-label="Ask Shiva conversation">
           <header className="ask-conversation-stage__head"><div><p className="scene-kicker">Current lens</p><h2>{selectedMode.label}</h2><p>{selectedMode.detail}</p></div><div className="ask-conversation-stage__stamp"><Sparkles size={17} aria-hidden="true" /><span>LOCAL GUIDE<br />STAGE B</span></div></header>
           <div className="ask-conversation-stage__body">
-            {!submitted ? <div className="ask-empty-state"><div className="ask-empty-state__orb"><Sparkles size={25} aria-hidden="true" /></div><p className="scene-kicker">Start a thread</p><h3>What would you like to understand?</h3><p>Choose a study prompt or write a question. Divya will begin from the small, transparent local starter library currently available in this experience.</p><div className="ask-prompt-grid">{askPrompts.slice(0, 4).map((prompt, index) => <button key={prompt} onClick={() => { setQuestion(prompt); setSubmitted(prompt); }}><span>0{index + 1}</span>{prompt}<ArrowRight size={15} aria-hidden="true" /></button>)}</div></div> : <>
+            {!submitted ? <div className="ask-empty-state"><div className="ask-empty-state__orb"><Sparkles size={25} aria-hidden="true" /></div><p className="scene-kicker">Start a thread</p><h3>What would you like to understand?</h3><p>Choose a study prompt or write a question. Shiva will begin from the small, transparent local starter library currently available in this experience.</p><div className="ask-prompt-grid">{askPrompts.slice(0, 4).map((prompt, index) => <button key={prompt} onClick={() => { setQuestion(prompt); setSubmitted(prompt); }}><span>0{index + 1}</span>{prompt}<ArrowRight size={15} aria-hidden="true" /></button>)}</div></div> : <>
               <article className="ask-user-question"><p className="ask-layer-label">Your question</p><p>{submitted}</p></article>
               <article className="ask-response-card">
                 <div className="ask-response-card__title"><div><p className="ask-layer-label"><Sparkles size={13} aria-hidden="true" />Generated explanation · {mode}</p><h3>{response.title}</h3></div><span>Layer 03</span></div>
@@ -71,10 +71,10 @@ export default function AskDivya() {
                 <article><p className="ask-layer-label"><Scale size={13} aria-hidden="true" />Layer 02 · Interpretation boundary</p><p>These starter records are educational context. They are not being presented as a verified edition, a complete commentary tradition, or a universal conclusion.</p></article>
                 <article><p className="ask-layer-label"><span className="ask-layer-compass" aria-hidden="true">✦</span>Layer 04 · Next learning path</p><Link href="/learning" className="ask-next-path">Continue with a pressure-free study path <ArrowRight size={15} aria-hidden="true" /></Link></article>
               </div>
-              <div className="ask-boundary"><strong>Content boundary:</strong> Divya’s explanation is generated from a bounded local guide. It is not scripture quotation, a formal translation, professional advice, or a substitute for a qualified teacher.</div>
+              <div className="ask-boundary"><strong>Content boundary:</strong> Shiva’s explanation is generated from a bounded local guide. It is not scripture quotation, a formal translation, professional advice, or a substitute for a qualified teacher.</div>
             </>}
           </div>
-          <div className="ask-composer-cinema"><textarea value={question} onChange={(event) => setQuestion(event.target.value)} onKeyDown={(event) => { if ((event.metaKey || event.ctrlKey) && event.key === "Enter") submit(); }} placeholder="Ask about a passage, a concept, or a reflection…" aria-label="Your question for Ask Divya" /><button className="button button--primary button--glow" onClick={submit} disabled={!question.trim()} aria-label="Send question"><ArrowUp size={17} aria-hidden="true" /><span>Ask Divya</span></button></div>
+          <div className="ask-composer-cinema"><textarea value={question} onChange={(event) => setQuestion(event.target.value)} onKeyDown={(event) => { if ((event.metaKey || event.ctrlKey) && event.key === "Enter") submit(); }} placeholder="Ask about a passage, a concept, or a reflection…" aria-label="Your question for Ask Shiva" /><button className="button button--primary button--glow" onClick={submit} disabled={!question.trim()} aria-label="Send question"><ArrowUp size={17} aria-hidden="true" /><span>Ask Shiva</span></button></div>
           <p className="ask-composer-cinema__hint">Press ⌘/Ctrl + Enter to send. Choose source links to continue outside the generated explanation.</p>
         </section>
       </section>

@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "DivyaNexus — Vedic Knowledge & Learning",
-  "short_name": "DivyaNexus",
+  "name": "Shiva — Vedic Knowledge & Learning",
+  "short_name": "Shiva",
   "description": "A source-aware Vedic knowledge, learning, and devotional wisdom experience in Tamil and English.",
   "start_url": "./",
   "scope": "./",
@@ -37,8 +37,8 @@
       "icons": [{ "src": "./assets/divyanexus/app-icon-192.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
-      "name": "Ask Divya",
-      "short_name": "Ask Divya",
+      "name": "Ask Shiva",
+      "short_name": "Ask Shiva",
       "description": "Open the bounded local guidance pathway.",
       "url": "./ask-divya",
       "icons": [{ "src": "./assets/divyanexus/app-icon-192.png", "sizes": "192x192", "type": "image/png" }]

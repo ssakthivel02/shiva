@@ -11,7 +11,7 @@ type Props = { theme: "night" | "dawn"; onToggleTheme: () => void; onSearch: () 
 
 const primaryLinks = [
   ["Scriptures", "/scriptures"],
-  ["Ask Divya", "/ask-divya"],
+  ["Ask Shiva", "/ask-divya"],
   ["Temples", "/temples"],
   ["Learning", "/learning"],
 ] as const;
@@ -74,7 +74,7 @@ export function SiteHeader({ theme, onToggleTheme, onSearch, onAsk }: Props) {
         <div className="site-header__actions">
           <button className="icon-button header-search" onClick={onSearch} aria-label="Open global search" title="Search (Ctrl+K)"><Search size={17} aria-hidden="true" /><span>Search</span><kbd>⌘K</kbd></button>
           <button className="icon-button theme-button" onClick={onToggleTheme} aria-label={`Switch to ${theme === "night" ? "dawn" : "night"} theme`} title="Change color theme">{theme === "night" ? <Sun size={17} aria-hidden="true" /> : <Moon size={17} aria-hidden="true" />}</button>
-          <button onClick={onAsk} className="ask-button"><Sparkles size={15} aria-hidden="true" />Ask Divya</button>
+          <button onClick={onAsk} className="ask-button"><Sparkles size={15} aria-hidden="true" />Ask Shiva</button>
           <button className="mobile-menu-button icon-button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}>{menuOpen ? <X size={21} aria-hidden="true" /> : <Menu size={21} aria-hidden="true" />}</button>
         </div>
       </div>

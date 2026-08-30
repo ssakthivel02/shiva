@@ -53,6 +53,6 @@ test.describe("quality wave metadata and navigation", () => {
     const recovery = page.getByRole("region", { name: "Suggested recovery routes" });
     await expect(recovery.getByRole("link", { name: /Explore the universe/ })).toBeVisible();
     await expect(recovery.getByRole("link", { name: /Search the collection/ })).toBeVisible();
-    await expect(recovery.getByRole("link", { name: /Ask Divya/ })).toBeVisible();
+    await expect(recovery.getByRole("link", { name: /Ask Shiva/ })).toBeVisible();
   });
 });

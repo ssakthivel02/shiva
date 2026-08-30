@@ -5,7 +5,7 @@ import { ASSETS } from "@/data/content";
 const suggestions = [
   { title: "Explore the universe", detail: "Browse all well-marked knowledge pathways.", href: "/explore", icon: Compass },
   { title: "Search the collection", detail: "Try Tamil, English or transliteration.", href: "/search", icon: Search },
-  { title: "Ask Divya", detail: "Open the bounded local guidance pathway.", href: "/ask-divya", icon: Sparkles },
+  { title: "Ask Shiva", detail: "Open the bounded local guidance pathway.", href: "/ask-divya", icon: Sparkles },
 ] as const;
 
 export default function NotFound() {
