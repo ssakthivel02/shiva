@@ -32,6 +32,7 @@ const NotFound = lazy(() => import("@/pages/NotFound"));
 const ScriptureReader = lazy(() => import("@/pages/ScriptureReader"));
 const SearchPage = lazy(() => import("@/pages/SearchPage"));
 const Status = lazy(() => import("@/pages/Status"));
+const DailyPanchangam = lazy(() => import("@/pages/DailyPanchangam"));
 
 function RestoreLegacyPath() {
   const [location, setLocation] = useLocation();
@@ -50,6 +51,7 @@ function AppRoutes({ onAsk, onSearch }: { onAsk: () => void; onSearch: () => voi
       <Route path="/ask-divya" component={AskDivya} />
       <Route path="/ask" component={AskDivya} />
       <Route path="/search" component={SearchPage} />
+      <Route path="/daily-panchangam" component={DailyPanchangam} />
       <Route path="/scriptures">{() => <ScriptureReader kind="scriptures" />}</Route>
       <Route path="/bhagavad-gita">{() => <ScriptureReader kind="bhagavad-gita" />}</Route>
       <Route path="/rig-veda">{() => <ScriptureReader kind="rig-veda" />}</Route>
