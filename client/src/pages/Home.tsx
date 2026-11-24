@@ -31,6 +31,7 @@ import { homePathways, popularSearches, trustSignals } from "@/data/homeExperien
 import { getBookmarks, toggleBookmark } from "@/lib/localLibrary";
 import { Reveal } from "@/components/Reveal";
 import { PortalArtworkPanel } from "@/components/PortalArtworkPanel";
+import { ShivaLivingGallery } from "@/components/ShivaLivingGallery";
 import "@/home-wave2.css";
 
 type HomeProps = { onAsk: () => void; onSearch: () => void };
@@ -217,6 +218,8 @@ export default function Home({ onAsk, onSearch }: HomeProps) {
           </aside>
         </div>
       </section>
+
+      <ShivaLivingGallery />
 
       <main id="main-content" className="cinema-main">
         <section className="cinema-intro-band" aria-label="Start exploring">

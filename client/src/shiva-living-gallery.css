@@ -1,0 +1,31 @@
+.shiva-living-gallery{max-width:1400px;margin:0 auto;padding:54px clamp(18px,4vw,52px) 40px;color:#fdf2d6}
+.shiva-living-gallery__heading{text-align:center;max-width:880px;margin:0 auto 25px}
+.shiva-living-gallery__eyebrow{color:#f4c987;display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.13em;font-size:.74rem;font-weight:800}
+.shiva-living-gallery__heading h2{font-family:Georgia,"Noto Serif Tamil",serif;font-size:clamp(1.8rem,3vw,3rem);line-height:1.3;margin:15px 0}
+.shiva-living-gallery__heading h2 span{color:#f1c88c;font-size:.72em}
+.shiva-living-gallery__heading p{color:#d6cfdf;font-size:clamp(.94rem,1.3vw,1.05rem);line-height:1.7}
+.shiva-living-gallery__stage{position:relative;overflow:hidden;border:1px solid rgba(255,210,129,.35);border-radius:28px;aspect-ratio:16/8;min-height:340px;background:radial-gradient(circle at 55% 60%,#3b2539,#0b1222 70%);box-shadow:0 22px 64px #0008;isolation:isolate}
+.shiva-living-gallery__scene{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease;pointer-events:none}
+.shiva-living-gallery__scene.is-current{opacity:1}
+.shiva-living-gallery__scene img{width:100%;height:100%;object-fit:cover;object-position:center 38%;filter:saturate(1.12) contrast(1.08);transform:scale(1.03);animation:shiva-gallery-breathe 16s ease-in-out infinite alternate}
+.shiva-living-gallery__scene:nth-child(2) img{object-fit:contain;object-position:70% 40%;background:#211928}
+.shiva-living-gallery__scene:nth-child(3) img{object-fit:cover;object-position:center}
+.shiva-living-gallery__stage::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,26,.93),rgba(11,11,26,.30) 58%,transparent 89%),linear-gradient(0deg,rgba(10,8,23,.65),transparent 60%);pointer-events:none}
+.shiva-living-gallery__embers{position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.65;background-image:radial-gradient(1px 1px at 16% 74%,#ffe2a1 95%,transparent),radial-gradient(2px 2px at 38% 24%,#ffd38d 95%,transparent),radial-gradient(1px 1px at 76% 61%,#ffe8be 95%,transparent),radial-gradient(2px 2px at 87% 81%,#faac54 95%,transparent);animation:shiva-embers 9s ease-in-out infinite alternate}
+.shiva-living-gallery__stage-copy{position:absolute;z-index:2;left:clamp(22px,5vw,80px);bottom:clamp(22px,5vw,70px);max-width:470px;text-shadow:0 2px 25px #000c}
+.shiva-living-gallery__stage-copy>span{font-size:.75rem;letter-spacing:.09em;color:#ffda97}
+.shiva-living-gallery__stage-copy h3{font-family:Georgia,"Noto Serif Tamil",serif;font-size:clamp(1.9rem,4vw,3.3rem);line-height:1.32;margin:.25em 0 .1em}
+.shiva-living-gallery__stage-copy p{font-size:clamp(.91rem,1.4vw,1.08rem);line-height:1.7;color:#f7efeb;margin:12px 0 0}
+.shiva-living-gallery__stage-copy .shiva-living-gallery__subtitle{color:#ffe09a;font-size:.86rem;font-weight:700}
+.shiva-living-gallery__toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:18px 0}
+.shiva-living-gallery__controls,.shiva-living-gallery__actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.shiva-living-gallery__controls button,.shiva-living-gallery__actions button,.shiva-living-gallery__actions a{border:1px solid rgba(245,205,139,.3);background:#241d33;color:#ffedd4;border-radius:12px;padding:9px 13px;min-width:40px;min-height:40px;font:inherit;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;cursor:pointer}
+.shiva-living-gallery__controls button.is-selected{background:#ecc38d;color:#1d1323;font-weight:800}
+.shiva-living-gallery__actions a{background:linear-gradient(110deg,#f8d5a2,#e9a755);color:#261724;font-weight:800}
+.shiva-living-gallery button:focus-visible,.shiva-living-gallery a:focus-visible{outline:3px solid #ffd995;outline-offset:3px}
+.shiva-living-gallery__credit,.shiva-living-gallery__message{color:#bdb3cc;font-size:.77rem;margin-top:10px}
+.shiva-living-gallery__credit a{color:#ffe0ac}
+@keyframes shiva-gallery-breathe{from{transform:scale(1.02) translateY(0)}to{transform:scale(1.11) translateY(-1%)}}
+@keyframes shiva-embers{from{transform:translateY(15px);opacity:.28}to{transform:translateY(-18px);opacity:.9}}
+@media(max-width:800px){.shiva-living-gallery{padding:36px 16px}.shiva-living-gallery__stage{aspect-ratio:4/5;min-height:380px}.shiva-living-gallery__stage::after{background:linear-gradient(0deg,#0c0b1dec 2%,transparent 78%)}.shiva-living-gallery__scene:nth-child(2) img{object-position:center}.shiva-living-gallery__stage-copy{left:23px;right:23px;bottom:30px}.shiva-living-gallery__stage-copy h3{font-size:2rem}}
+@media(prefers-reduced-motion:reduce){.shiva-living-gallery__scene,.shiva-living-gallery__scene img,.shiva-living-gallery__embers{animation:none;transition:none}}

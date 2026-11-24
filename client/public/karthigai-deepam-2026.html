@@ -46,6 +46,29 @@ h2{font-family:Georgia,"Noto Serif Tamil",serif;color:var(--gold);font-size:clam
 .small{color:var(--muted);font-size:.88rem}
 .banner{margin-top:18px;border-left:3px solid #eebd74;padding:12px 18px;background:#281b34}
 footer{max-width:1000px;padding:20px 22px 32px;margin:auto;border-top:1px solid rgba(255,255,255,.16);font-size:.82rem;color:var(--muted);text-align:center}
+
+/* Karthigai festival media gallery and virtual Deepam (no global counters). */
+.divine-gallery{margin:42px 0 14px;text-align:center}
+.divine-gallery .overline{color:#ffe2a7;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+.gallery-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}
+.gallery-cards figure{margin:0;position:relative;overflow:hidden;border:1px solid #816347;border-radius:18px;background:#251b32;min-width:0;box-shadow:0 18px 35px #0004}
+.gallery-cards img{display:block;width:100%;height:280px;object-fit:cover;filter:saturate(1.04) contrast(1.05);transition:transform .6s ease,filter .6s ease}
+.gallery-cards figure:nth-child(2) img{object-fit:contain;background:#21162c}
+.gallery-cards figure:hover img,.gallery-cards figure:focus-within img{transform:scale(1.06);filter:saturate(1.18)}
+.gallery-cards figcaption{padding:13px 14px;text-align:left;line-height:1.6;color:#f9dfb9;font-weight:650}
+.gallery-cards .source{display:block;font-size:.7rem;color:#d5bfba;font-weight:400}
+.gallery-cards .source a{color:#ffdaa2}
+.gallery-cards figure::after{content:"";position:absolute;left:18%;right:18%;top:0;height:1px;background:#ffe4b0;box-shadow:0 0 20px 4px #e28f48;opacity:.65}
+.deepam-lamp{margin:32px auto 0;max-width:780px;background:linear-gradient(135deg,#30203d,#191526);border:1px solid #b48757;border-radius:22px;padding:25px;text-align:center}
+.deepam-lamp p{color:#efe0db}
+.deepam-flame{display:block;width:40px;height:76px;margin:15px auto;background:radial-gradient(circle at 50% 78%,#fff7c8 0 23%,#ffd076 40%,#ff912e 66%,transparent 70%);filter:drop-shadow(0 0 22px #fda64e);clip-path:path("M20 0 C43 26 36 50 23 68 C6 75 -10 49 20 0Z");transform-origin:center bottom;opacity:.35;transition:opacity .5s,filter .5s}
+.deepam-lamp.is-lit .deepam-flame{opacity:1;animation:flame 1.6s ease-in-out infinite alternate}
+.deepam-lamp button{font:inherit;border:0;border-radius:12px;background:linear-gradient(110deg,#ffc46f,#ffe3a6);color:#241121;font-weight:800;padding:11px 24px;cursor:pointer;min-height:44px}
+.deepam-lamp button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.deepam-lamp .lamp-feedback{color:#f5d798;font-weight:700;min-height:1.6em}
+.gallery-small{font-size:.8rem;color:#cdbfbf;margin-top:18px}
+@media(max-width:650px){.gallery-cards{display:flex;gap:13px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 2px 16px}.gallery-cards figure{flex:0 0 78%;scroll-snap-align:center}.gallery-cards img{height:270px}}
+@media(prefers-reduced-motion:reduce){.gallery-cards img,.deepam-flame,.deepam-lamp.is-lit .deepam-flame{transition:none;animation:none}}
 @media(max-width:650px){.grid{grid-template-columns:1fr}.hero{padding-top:20px}.panel{padding:20px}.scene{border-radius:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.flame,.star{animation:none}}
 </style>
@@ -81,6 +104,35 @@ footer{max-width:1000px;padding:20px 22px 32px;margin:auto;border-top:1px solid 
 </div>
 <p id="share-result" class="small" role="status" aria-live="polite"></p>
 </section>
+
+<section class="divine-gallery" id="divine-gallery" aria-labelledby="divine-heading">
+<p class="overline">திருக்கார்த்திகை அருள் ஒளி · Shiva image experience</p>
+<h2 id="divine-heading">சிவபெருமான் · நடராஜர் · அருணாசல ஜோதி</h2>
+<p>சிவபெருமானின் திருவுருவங்கள், நடராஜர் சிற்பக்கலை மற்றும் அருணாசல ஜோதியை நினைவூட்டும் சிறப்புக் காட்சிகள்.</p>
+<div class="gallery-cards" aria-label="Sacred image gallery; swipe sideways on mobile">
+<figure>
+<img src="/assets/divyanexus/owner-selected-vision.webp" loading="lazy" width="900" height="650" alt="Digital devotional illustration of the Shiva spiritual knowledge portal">
+<figcaption>சிவ ஞானப் பாதை <small class="source">Original site artwork · Artistic illustration</small></figcaption>
+</figure>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg" loading="lazy" width="480" height="600" alt="A Chola-era bronze sculpture of Natarajar, Shiva's cosmic dance">
+<figcaption>நடராஜர் — ஆனந்த தாண்டவம் <small class="source"><a target="_blank" rel="noreferrer" href="https://commons.wikimedia.org/wiki/File:Shiva_as_Lord_of_the_Dance_(Nataraja).jpg">Art Institute of Chicago · CC0</a></small></figcaption>
+</figure>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Adiyogi_Shiva_statue.jpg" loading="lazy" width="605" height="503" alt="Photograph of an Adiyogi Shiva statue lit at night">
+<figcaption>ஆதியோகி — தியான அமைதி <small class="source"><a target="_blank" rel="noreferrer" href="https://commons.wikimedia.org/wiki/File:Adiyogi_Shiva_statue.jpg">Deshna Subramanian · CC0</a></small></figcaption>
+</figure>
+</div>
+<p class="gallery-small">இவை அலங்கார/கலைக் காட்சிகளும் ஏற்கெனவே எடுக்கப்பட்ட சிற்பப் புகைப்படங்களும் மட்டுமே; இன்று நிகழும் திருவிழாவின் நேரடி படங்கள் அல்ல.</p>
+<div class="deepam-lamp" id="deepam-lamp" aria-labelledby="lamp-heading">
+<h2 id="lamp-heading">🪔 மனதார ஒரு தீபம் ஏற்றுங்கள்</h2>
+<p>ஒரு நொடி அமைதியாக இருந்து அனைவரின் நலனுக்காக நினைப்போம்.</p>
+<div class="deepam-flame" aria-hidden="true"></div>
+<button type="button" id="light-deepam">தீபம் ஏற்றுங்கள் · Light the lamp</button>
+<p class="lamp-feedback" id="lamp-feedback" role="status" aria-live="polite">உங்கள் பிரார்த்தனைக்கான சிறு ஒளி அனுபவம்</p>
+<p class="gallery-small">A symbolic on-screen lamp only. No donation or visitor count is recorded.</p>
+</div>
+</section>
 <div class="grid">
 <section class="panel" aria-labelledby="story"><h2 id="story">திருவண்ணாமலை மகா தீபம்</h2><p>அருணாசலேஸ்வரர் திருக்கோயிலின் கார்த்திகை தீபத் திருவிழா சிவபெருமானின் அருட்பெருஞ்ஜோதியை நினைவுபடுத்தும் பெருநாள். திருவண்ணாமலை மலை உச்சியில் மகா தீபம் ஏற்றப்படுவது இவ்விழாவின் சிறப்பாகும்.</p><p><strong>2026:</strong> நவம்பர் 24 மாலை சுமார் 6:00 மணிக்கு மகா தீபம் ஏற்றப்படுவதாக அறிவிக்கப்பட்டுள்ளது. நிகழ்ச்சி நேரம் மற்றும் பொது அணுகல் ஏற்பாடுகளுக்குக் கோயில்/அதிகாரப்பூர்வ அறிவிப்புகளே முதன்மை.</p></section>
 <section class="panel" aria-labelledby="reflection"><h2 id="reflection">ஒளியின் பொருள்</h2><p>இருளை நீக்கும் தீபம், அறிவு, கருணை, நம்பிக்கை, பகிர்வு ஆகியவற்றின் நினைவுச்சின்னமாகவும் திகழ்கிறது.</p><p>வீட்டில் விளக்கேற்றும்போது பாதுகாப்பான இடத்தைத் தேர்ந்தெடுக்கவும்; எரியும் தீபங்களை கவனிக்காமல் விட வேண்டாம்.</p></section>
@@ -91,6 +143,20 @@ footer{max-width:1000px;padding:20px 22px 32px;margin:auto;border-top:1px solid 
 </main>
 <footer>ஓம் நமசிவாய · Shiva · <a href="https://shiva.omsaravanabhava.org/">shiva.omsaravanabhava.org</a> · 2026</footer>
 <script>
+
+var lightButton=document.getElementById('light-deepam');
+if(lightButton) lightButton.addEventListener('click',function(){
+  var panel=document.getElementById('deepam-lamp');
+  var feedback=document.getElementById('lamp-feedback');
+  if(panel&&feedback){
+    var nowLit=!panel.classList.contains('is-lit');
+    panel.classList.toggle('is-lit',nowLit);
+    lightButton.textContent=nowLit?'தீபம் ஒளிர்கிறது · Extinguish':'தீபம் ஏற்றுங்கள் · Light the lamp';
+    lightButton.setAttribute('aria-pressed',String(nowLit));
+    feedback.textContent=nowLit?'அன்பு பெருகட்டும்! எல்லா உயிர்களும் நலமுடன் வாழட்டும்!':'உங்கள் பிரார்த்தனைக்கான சிறு ஒளி அனுபவம்';
+  }
+});
+
 document.getElementById('share').addEventListener('click',async function(){
   var status=document.getElementById('share-result');
   var content={title:'திருக்கார்த்திகை தீபம் 2026',text:'அருணாசல ஜோதி! ஓம் நமசிவாய! கார்த்திகை தீப நல்வாழ்த்துகள்.',url:location.href};
