@@ -157,6 +157,13 @@ export default function Home({ onAsk, onSearch }: HomeProps) {
               ))}
             </div>
 
+            <a
+              className="button button--gold"
+              href="/karthigai-deepam-2026.html"
+              aria-label="திருக்கார்த்திகை தீபம் 2026 — சிறப்பு பக்திப் பக்கம்"
+            >
+              🪔 கார்த்திகை தீபம் 2026 · சிறப்புப் பக்கம் <ArrowRight size={16} aria-hidden="true" />
+            </a>
             <div className="cinema-hero__actions">
               <button className="button button--primary button--glow" onClick={onAsk}><Sparkles size={17} aria-hidden="true" />Ask Shiva</button>
               <Link className="button button--glass" href="/explore"><Compass size={17} aria-hidden="true" />Explore the universe</Link>
